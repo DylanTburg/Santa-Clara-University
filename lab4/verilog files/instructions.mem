@@ -1,6 +1,6 @@
+//Addi reg00 4 //reg00 =4 
+//Subi reg01 8 //reg01 = 8
 //Load reg11 2 //reg11 = 2 loads immediate 
-//Addi reg00 reg11 2 //reg00 =4 
-//Subi reg01 reg00 2 //reg01 = 2
 //Mv reg10 reg00 //reg10 = 4
 //Add reg00 reg00 //reg00=8
 //Sub reg01 reg01 //reg01 = 0
@@ -13,13 +13,11 @@
 //loading zero to all reg
 
 //actual code now:
-1110001010000000
-1100100001000000
+1110000010000000
+1100100100000000
 0001100001000000
 0011000000000000
 0110000000000000
 0100101000000000
 1000000000000000
 1010000000000000
-
-

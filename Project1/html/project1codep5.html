@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      -->
+<title>project1codep5</title>
+<meta name="generator" content="MATLAB 23.2">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.date" content="2024-02-14">
+<meta name="DC.source" content="project1codep5.m">
+<style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style>
+</head>
+<body>
+<div class="content">
+<pre class="codeinput">QX = [66.67, 250, 1*10^-6, 1*10^-6];
+b =[1;
+    0;
+    0];
+w=0:10:10e6;
+F = freqresp5(QX,b,w,20);
+semilogx(w/(2*pi),F)
+grid <span class="string">on</span>
+xscale <span class="string">log</span>
+<span class="keyword">function</span> F = freqresp5(QX,b,w,num)
+F=[];
+<span class="comment">% QX is a vector that contains all the nominal element values. % Resistors are listed first (as Q(1),Q(2) and Q(3)), then % capacitors (Q(4)), and finally inductors (Q(5)). num is the % number of different cases that we wish to simulate.</span>
+<span class="keyword">for</span> s=1:num
+    Q=variation(QX);
+    <span class="comment">% This function produces random variations of the element % values, which are within 20% of the nominal ones.</span>
+    G=zeros(3,3); C=zeros(3,3); L=zeros(3,3);
+    <span class="comment">% This line saves us some time, since we now need to enter % only the nonzero elements in G, C and L.</span>
+    G(1,1)=1;G(2,1)=-1/Q(1);G(2,2)=1/Q(1)+1/Q(2);G(2,3)=-1/Q(2);
+    G(3,2) = -1/Q(2); G(3,3)=1/Q(2);
+    C(2,2)= Q(3); C(3,3)=Q(4);
+    <span class="comment">% For each new set of element values, matrices G, C and L must % be recomputed.</span>
+    mag=zeros(3,1);
+    <span class="comment">% Vector mag is initialized.</span>
+    <span class="keyword">for</span> k=1:length(w)
+        omega=w(k);
+        <span class="comment">% Omega is the next frequency in w.</span>
+        A=G+i*omega*C;
+        x=A\b;
+        <span class="comment">% Vector x contains the solution of the node voltage % equations in complex form.</span>
+        mag= [mag abs(x)];
+        <span class="comment">% The magnitudes of all voltages as stored as a new column in % matrix mag.</span>
+    <span class="keyword">end</span>
+        V3=mag(3,2:length(w)+1);
+        <span class="comment">%Since we are interested only in V3, we will extract row 3 of matrix % mag (and ignore the first column).</span>
+        FX=20*log10(V3);
+        hold <span class="string">on</span>;
+        F=[F;FX];
+<span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">function</span> Q=variation (R)
+    m=length(R);
+    g=ones(1,m)+.5*rand(1,m);
+    Q=.8*(R.*g);
+<span class="keyword">end</span>
+</pre>
+<img vspace="5" hspace="5" src="project1codep5_01.png" alt=""> <p class="footer">
+<br>
+<a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2023b</a>
+<br>
+</p>
+</div>
+<!--
+##### SOURCE BEGIN #####
+QX = [66.67, 250, 1*10^-6, 1*10^-6];
+b =[1;
+    0;
+    0];
+w=0:10:10e6;
+F = freqresp5(QX,b,w,20);
+semilogx(w/(2*pi),F)
+grid on
+xscale log
+function F = freqresp5(QX,b,w,num)
+F=[];
+% QX is a vector that contains all the nominal element values. % Resistors are listed first (as Q(1),Q(2) and Q(3)), then % capacitors (Q(4)), and finally inductors (Q(5)). num is the % number of different cases that we wish to simulate.
+for s=1:num
+    Q=variation(QX);
+    % This function produces random variations of the element % values, which are within 20% of the nominal ones.
+    G=zeros(3,3); C=zeros(3,3); L=zeros(3,3);
+    % This line saves us some time, since we now need to enter % only the nonzero elements in G, C and L.
+    G(1,1)=1;G(2,1)=-1/Q(1);G(2,2)=1/Q(1)+1/Q(2);G(2,3)=-1/Q(2);
+    G(3,2) = -1/Q(2); G(3,3)=1/Q(2);
+    C(2,2)= Q(3); C(3,3)=Q(4);
+    % For each new set of element values, matrices G, C and L must % be recomputed.
+    mag=zeros(3,1);
+    % Vector mag is initialized.
+    for k=1:length(w)
+        omega=w(k);
+        % Omega is the next frequency in w.
+        A=G+i*omega*C;
+        x=A\b;
+        % Vector x contains the solution of the node voltage % equations in complex form.
+        mag= [mag abs(x)];
+        % The magnitudes of all voltages as stored as a new column in % matrix mag.
+    end
+        V3=mag(3,2:length(w)+1);
+        %Since we are interested only in V3, we will extract row 3 of matrix % mag (and ignore the first column).
+        FX=20*log10(V3);
+        hold on;
+        F=[F;FX];
+end
+end
+function Q=variation (R)
+    m=length(R);
+    g=ones(1,m)+.5*rand(1,m);
+    Q=.8*(R.*g);
+end
+##### SOURCE END #####
+-->
+</body>
+</html>

@@ -1,0 +1,35 @@
+### Custom WaveView session file (version V-2023.12-6 build Apr 16, ) ###
+### saved at 17:18:06 on Tue Apr  8 2025 ###
+wdf 0 "/DCNFS/users/student/dthornburg/simulation/Lab1,Voltage_Divider,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results/resultsMap.xml" load=used "title=dc:dc" "atype=dc:dc" 
+scalar list
+waveview_begin 1  stack  offset=0 name_b=81 mntr_b=81 name_width=66 "name=dc" showtitle=true "wvtitle=Lab1:Voltage_Divider:default:dc" 
+  panel_begin linear pidx=0 spath=name+file xlabel="Real(-)" ylabel="V" 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(vout)" attr=3:0:1:0 alias="v(/Vout)" disp=show 
+  panel_end
+waveview_end
+browserClosed
+
+#Custom Plot Section
+simulation_begin test=default history=1 idx=20
+run_type 1
+view_list
+  4 dc
+end_view_list
+probe_list
+  v(/Vout) alias=
+end_probe_list
+original_sim
+sim_id=default
+history_point=1
+sim_idx=20
+sim_dir=/DCNFS/users/student/dthornburg/simulation/Lab1,Voltage_Divider,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results
+from_virtuoso=0
+is_output=1
+is_mtb=0
+hasViewer=0
+{"sim_id":"default","sae_session":"saeSession2","sae_session_desc":"","directory":"/DCNFS/users/student/dthornburg/simulation/Lab1,Voltage_Divider,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results","results_directory":"~/simulation","results_absdirectory":"/home/dthornburg/simulation","post_results_dir":"/DCNFS/users/student/dthornburg/simulation/Lab1,Voltage_Divider,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results","save_post_results_in_session":"0","is_mc_multiple_run":"0","is_sim_sweep_run":"0","is_data_driven_sweep":"false","runDirDelimiter":",","test_suite_info":"Lab1:Voltage_Divider:schematic","history_index":"1","history_name":"history_1","history_desc":"Run Simulation","is_mtb":"0","id":"20","child":"0","description":"","design_str":"Lab1:Voltage_Divider:schematic","simulator":"HSPICE","newResultsFormat":"0","is_initial":"0","sim_wave_removed":"0","chart_list":[],"isSaeAging":"0","saeAgingSimMode":"3","sonoma":"1","sonomaInc":"0","incPartial":"full","sim_netlist_removed":"0","modelIncPath":"","isbreviate_historyname":"false","history_check":"false","ischange_historyname":"false","autoPlot":"1","isDirPlot":"0","invokeFrom":"SIM_DONE","save_format":"","incomplete_type":"","corparams":"","exportImageSize":"636*254","isWorstCaseAnalysis":"0","dspfIncludeOptions":"0","equation_list":[{"equa_id":"equa#0","index":"1","equa_name":"","equa_schem":"","type":"","resultType":"","anaName":"","enable":true,"is_plot":true,"plotType":"auto","logicRadix":"auto","color":"","units":"","ParamConditions":"","isGlobal":"true","x_axis":"","x_axis_scale":"auto","y_axis_scale":"auto","goal":"","show_in_rv":"0","description":"","saveImage":"0","precision":"0","poor":"","poorHigh":"","poorLow":"","measExpr":"","eqnIdx":"","specEqu":false,"forceRecal":false,"originalExpr":"","measWaveDep":false,"lineIdx":""}],"probe_list":[{"probe_id":"probe#0","index":"2","signal_alias":"","signal_name":"v(/Vout)","signal_type":"net","resultType":"dc","anaName":"","enable":true,"is_plot":true,"plotType":"auto","logicRadix":"auto","color":"255:0:0","units":"","ParamConditions":"","isGlobal":"false","x_axis":"","x_axis_scale":"auto","y_axis_scale":"auto","show_in_rv":"1","description":"","saveImage":"0","eqnIdx":"1","specEqu":false,"poor":"0%","poorHigh":"","poorLow":"","goal":"","precision":"6","measWaveDep":false,"lineIdx":"1"}],"model_list":[],"globalModel_list":[],"globalTemperature_list":[{"file":"25:Celsius"}],"design_variables_list":[["R","1k"]],"corner_group_params_list":[],"analyses_list":[["dc","{Sweep Variable: Design Variable Variable Name: R  Sweep Type: Linear Steps }"]],"modelGrp_list":[],"corner_list":[],"monte_list":[],"monteSigma":"","monteUseDesignVar":"0","sweep_list":[],"job_list":[]}
+end_original_sim
+original_map
+{"sae_session":"saeSession2","win_id":"28","map_list":[{"schemName":"v(/Vout)","waveName":"v(vout)","resultID":"resFile0","resultType":"dc","analysisName":"dc","dataType":"","time":"","paramName":"","type":"anytype","display_type":"analogv","paramConditions":"","bits":"","lo":"0.0","hi":"0.0","percent":false,"expr_index":"2","is_expression":false}],"result_list":[{"file_name":"resultsMap.xml","resultID":"resFile0"},{"file_name":"postResultsMap.xml","is_post":"TRUE"}]}
+end_original_map
+simulation_end

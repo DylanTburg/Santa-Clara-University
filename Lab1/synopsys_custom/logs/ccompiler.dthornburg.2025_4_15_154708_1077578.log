@@ -1,0 +1,52 @@
+[15:47:11.40] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c                 Version V-2023.12-6 for linux64 - Apr 18, 2024 
+              /c 
+              /c                     Copyright (c) 2004 - 2024 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 10100519 compiled on Thu Apr 18 11:33:50 2024 for CentOS64 7.3
+              /c Invocation: /usr/synopsys/customcompiler/V-2023.12-6/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr 15 15:47:08 2025
+              /c Host: linux402602
+              /c Working directory: /DCNFS/users/student/dthornburg/ELEN153L/Lab1
+              /c 
+[15:47:13.48] /m Information: Registering ICV PERC package...
+[15:47:13.78] /r giShowFrameTabs true
+[15:47:13.78] /r giWindowId 1
+[15:47:13.79] /r giWindowGeometry 1040x800
+[15:47:15.58] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[15:47:15.89] /r giWindowId 2
+[15:47:15.89] /r giWindowGeometry 660x600+50+77
+[15:47:16.06] /i gi::setCurrentIndex {libs} -index {verilogaLib} -in [gi::getWindows 2]
+[15:47:16.09] /i gi::setItemSelection {libs} -index {verilogaLib} -in [gi::getWindows 2]
+[15:47:16.78] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[15:47:20.26] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:47:20.26] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[15:47:20.55] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:47:20.55] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions dmEditCopyCascade -from [db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]]]]
+[15:47:21.97] /# gi::executeAction {deOpenDesign} -in [gi::getWindows 2]
+[15:47:21.97] /i de::showOpenDesign
+[15:47:22.00] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[15:47:22.27] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+628+233
+[15:47:27.41] /i gi::pressButton {cancel} -in [gi::getDialogs {deOpenDesign}]
+[15:47:28.50] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:47:28.50] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[15:47:48.08] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[21:28:46.80] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[21:28:46.82] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

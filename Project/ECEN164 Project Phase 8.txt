@@ -1,0 +1,6 @@
+Reorganize slides
+Separate simulations vs real-life circuit tests on slides
+Add Vin on Load/Line Regulation Waveforms
+Include more screenshots of Schematic alterations instead of just saying them
+Add in Feedback Equation
+Alternate line-regulation test

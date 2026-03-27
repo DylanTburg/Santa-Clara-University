@@ -1,0 +1,1 @@
+For our polyphase SEPIC converter, we have a Soft-Start network, (optional) LDO, and the two current-sense networks.

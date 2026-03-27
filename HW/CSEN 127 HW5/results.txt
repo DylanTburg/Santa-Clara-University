@@ -1,0 +1,2064 @@
+[dthornburg@linux402604 HW5]$ ./simv -no_save
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP1-1_Full64; Runtime version V-2023.12-SP1-1_Full64;  Nov 15 23:01 2025
+Start of ROM File Test 
+
+Address =    0 --- Data =    0 
+
+Address =    1 --- Data =   99 
+
+Address =    2 --- Data =  198 
+
+Address =    3 --- Data =  297 
+
+Address =    4 --- Data =  396 
+
+Address =    5 --- Data =  495 
+
+Address =    6 --- Data =  594 
+
+Address =    7 --- Data =  693 
+
+Address =    8 --- Data =  792 
+
+Address =    9 --- Data =  891 
+
+Address =   10 --- Data =  990 
+
+Address =   11 --- Data =   89 
+
+Address =   12 --- Data =  188 
+
+Address =   13 --- Data =  287 
+
+Address =   14 --- Data =  386 
+
+Address =   15 --- Data =  485 
+
+Address =   16 --- Data =  584 
+
+Address =   17 --- Data =  683 
+
+Address =   18 --- Data =  782 
+
+Address =   19 --- Data =  881 
+
+Address =   20 --- Data =  980 
+
+Address =   21 --- Data =   79 
+
+Address =   22 --- Data =  178 
+
+Address =   23 --- Data =  277 
+
+Address =   24 --- Data =  376 
+
+Address =   25 --- Data =  475 
+
+Address =   26 --- Data =  574 
+
+Address =   27 --- Data =  673 
+
+Address =   28 --- Data =  772 
+
+Address =   29 --- Data =  871 
+
+Address =   30 --- Data =  970 
+
+Address =   31 --- Data =   69 
+
+Address =   32 --- Data =  168 
+
+Address =   33 --- Data =  267 
+
+Address =   34 --- Data =  366 
+
+Address =   35 --- Data =  465 
+
+Address =   36 --- Data =  564 
+
+Address =   37 --- Data =  663 
+
+Address =   38 --- Data =  762 
+
+Address =   39 --- Data =  861 
+
+Address =   40 --- Data =  960 
+
+Address =   41 --- Data =   59 
+
+Address =   42 --- Data =  158 
+
+Address =   43 --- Data =  257 
+
+Address =   44 --- Data =  356 
+
+Address =   45 --- Data =  455 
+
+Address =   46 --- Data =  554 
+
+Address =   47 --- Data =  653 
+
+Address =   48 --- Data =  752 
+
+Address =   49 --- Data =  851 
+
+Address =   50 --- Data =  950 
+
+Address =   51 --- Data =   49 
+
+Address =   52 --- Data =  148 
+
+Address =   53 --- Data =  247 
+
+Address =   54 --- Data =  346 
+
+Address =   55 --- Data =  445 
+
+Address =   56 --- Data =  544 
+
+Address =   57 --- Data =  643 
+
+Address =   58 --- Data =  742 
+
+Address =   59 --- Data =  841 
+
+Address =   60 --- Data =  940 
+
+Address =   61 --- Data =   39 
+
+Address =   62 --- Data =  138 
+
+Address =   63 --- Data =  237 
+
+Address =   64 --- Data =  336 
+
+Address =   65 --- Data =  435 
+
+Address =   66 --- Data =  534 
+
+Address =   67 --- Data =  633 
+
+Address =   68 --- Data =  732 
+
+Address =   69 --- Data =  831 
+
+Address =   70 --- Data =  930 
+
+Address =   71 --- Data =   29 
+
+Address =   72 --- Data =  128 
+
+Address =   73 --- Data =  227 
+
+Address =   74 --- Data =  326 
+
+Address =   75 --- Data =  425 
+
+Address =   76 --- Data =  524 
+
+Address =   77 --- Data =  623 
+
+Address =   78 --- Data =  722 
+
+Address =   79 --- Data =  821 
+
+Address =   80 --- Data =  920 
+
+Address =   81 --- Data =   19 
+
+Address =   82 --- Data =  118 
+
+Address =   83 --- Data =  217 
+
+Address =   84 --- Data =  316 
+
+Address =   85 --- Data =  415 
+
+Address =   86 --- Data =  514 
+
+Address =   87 --- Data =  613 
+
+Address =   88 --- Data =  712 
+
+Address =   89 --- Data =  811 
+
+Address =   90 --- Data =  910 
+
+Address =   91 --- Data =    9 
+
+Address =   92 --- Data =  108 
+
+Address =   93 --- Data =  207 
+
+Address =   94 --- Data =  306 
+
+Address =   95 --- Data =  405 
+
+Address =   96 --- Data =  504 
+
+Address =   97 --- Data =  603 
+
+Address =   98 --- Data =  702 
+
+Address =   99 --- Data =  801 
+
+Address =  100 --- Data =  900 
+
+Address =  101 --- Data =  999 
+
+Address =  102 --- Data =   98 
+
+Address =  103 --- Data =  197 
+
+Address =  104 --- Data =  296 
+
+Address =  105 --- Data =  395 
+
+Address =  106 --- Data =  494 
+
+Address =  107 --- Data =  593 
+
+Address =  108 --- Data =  692 
+
+Address =  109 --- Data =  791 
+
+Address =  110 --- Data =  890 
+
+Address =  111 --- Data =  989 
+
+Address =  112 --- Data =   88 
+
+Address =  113 --- Data =  187 
+
+Address =  114 --- Data =  286 
+
+Address =  115 --- Data =  385 
+
+Address =  116 --- Data =  484 
+
+Address =  117 --- Data =  583 
+
+Address =  118 --- Data =  682 
+
+Address =  119 --- Data =  781 
+
+Address =  120 --- Data =  880 
+
+Address =  121 --- Data =  979 
+
+Address =  122 --- Data =   78 
+
+Address =  123 --- Data =  177 
+
+Address =  124 --- Data =  276 
+
+Address =  125 --- Data =  375 
+
+Address =  126 --- Data =  474 
+
+Address =  127 --- Data =  573 
+
+Address =  128 --- Data =  672 
+
+Address =  129 --- Data =  771 
+
+Address =  130 --- Data =  870 
+
+Address =  131 --- Data =  969 
+
+Address =  132 --- Data =   68 
+
+Address =  133 --- Data =  167 
+
+Address =  134 --- Data =  266 
+
+Address =  135 --- Data =  365 
+
+Address =  136 --- Data =  464 
+
+Address =  137 --- Data =  563 
+
+Address =  138 --- Data =  662 
+
+Address =  139 --- Data =  761 
+
+Address =  140 --- Data =  860 
+
+Address =  141 --- Data =  959 
+
+Address =  142 --- Data =   58 
+
+Address =  143 --- Data =  157 
+
+Address =  144 --- Data =  256 
+
+Address =  145 --- Data =  355 
+
+Address =  146 --- Data =  454 
+
+Address =  147 --- Data =  553 
+
+Address =  148 --- Data =  652 
+
+Address =  149 --- Data =  751 
+
+Address =  150 --- Data =  850 
+
+Address =  151 --- Data =  949 
+
+Address =  152 --- Data =   48 
+
+Address =  153 --- Data =  147 
+
+Address =  154 --- Data =  246 
+
+Address =  155 --- Data =  345 
+
+Address =  156 --- Data =  444 
+
+Address =  157 --- Data =  543 
+
+Address =  158 --- Data =  642 
+
+Address =  159 --- Data =  741 
+
+Address =  160 --- Data =  840 
+
+Address =  161 --- Data =  939 
+
+Address =  162 --- Data =   38 
+
+Address =  163 --- Data =  137 
+
+Address =  164 --- Data =  236 
+
+Address =  165 --- Data =  335 
+
+Address =  166 --- Data =  434 
+
+Address =  167 --- Data =  533 
+
+Address =  168 --- Data =  632 
+
+Address =  169 --- Data =  731 
+
+Address =  170 --- Data =  830 
+
+Address =  171 --- Data =  929 
+
+Address =  172 --- Data =   28 
+
+Address =  173 --- Data =  127 
+
+Address =  174 --- Data =  226 
+
+Address =  175 --- Data =  325 
+
+Address =  176 --- Data =  424 
+
+Address =  177 --- Data =  523 
+
+Address =  178 --- Data =  622 
+
+Address =  179 --- Data =  721 
+
+Address =  180 --- Data =  820 
+
+Address =  181 --- Data =  919 
+
+Address =  182 --- Data =   18 
+
+Address =  183 --- Data =  117 
+
+Address =  184 --- Data =  216 
+
+Address =  185 --- Data =  315 
+
+Address =  186 --- Data =  414 
+
+Address =  187 --- Data =  513 
+
+Address =  188 --- Data =  612 
+
+Address =  189 --- Data =  711 
+
+Address =  190 --- Data =  810 
+
+Address =  191 --- Data =  909 
+
+Address =  192 --- Data =    8 
+
+Address =  193 --- Data =  107 
+
+Address =  194 --- Data =  206 
+
+Address =  195 --- Data =  305 
+
+Address =  196 --- Data =  404 
+
+Address =  197 --- Data =  503 
+
+Address =  198 --- Data =  602 
+
+Address =  199 --- Data =  701 
+
+Address =  200 --- Data =  800 
+
+Address =  201 --- Data =  899 
+
+Address =  202 --- Data =  998 
+
+Address =  203 --- Data =   97 
+
+Address =  204 --- Data =  196 
+
+Address =  205 --- Data =  295 
+
+Address =  206 --- Data =  394 
+
+Address =  207 --- Data =  493 
+
+Address =  208 --- Data =  592 
+
+Address =  209 --- Data =  691 
+
+Address =  210 --- Data =  790 
+
+Address =  211 --- Data =  889 
+
+Address =  212 --- Data =  988 
+
+Address =  213 --- Data =   87 
+
+Address =  214 --- Data =  186 
+
+Address =  215 --- Data =  285 
+
+Address =  216 --- Data =  384 
+
+Address =  217 --- Data =  483 
+
+Address =  218 --- Data =  582 
+
+Address =  219 --- Data =  681 
+
+Address =  220 --- Data =  780 
+
+Address =  221 --- Data =  879 
+
+Address =  222 --- Data =  978 
+
+Address =  223 --- Data =   77 
+
+Address =  224 --- Data =  176 
+
+Address =  225 --- Data =  275 
+
+Address =  226 --- Data =  374 
+
+Address =  227 --- Data =  473 
+
+Address =  228 --- Data =  572 
+
+Address =  229 --- Data =  671 
+
+Address =  230 --- Data =  770 
+
+Address =  231 --- Data =  869 
+
+Address =  232 --- Data =  968 
+
+Address =  233 --- Data =   67 
+
+Address =  234 --- Data =  166 
+
+Address =  235 --- Data =  265 
+
+Address =  236 --- Data =  364 
+
+Address =  237 --- Data =  463 
+
+Address =  238 --- Data =  562 
+
+Address =  239 --- Data =  661 
+
+Address =  240 --- Data =  760 
+
+Address =  241 --- Data =  859 
+
+Address =  242 --- Data =  958 
+
+Address =  243 --- Data =   57 
+
+Address =  244 --- Data =  156 
+
+Address =  245 --- Data =  255 
+
+Address =  246 --- Data =  354 
+
+Address =  247 --- Data =  453 
+
+Address =  248 --- Data =  552 
+
+Address =  249 --- Data =  651 
+
+Address =  250 --- Data =  750 
+
+Address =  251 --- Data =  849 
+
+Address =  252 --- Data =  948 
+
+Address =  253 --- Data =   47 
+
+Address =  254 --- Data =  146 
+
+Address =  255 --- Data =  245 
+
+Address =  256 --- Data =  344 
+
+Address =  257 --- Data =  443 
+
+Address =  258 --- Data =  542 
+
+Address =  259 --- Data =  641 
+
+Address =  260 --- Data =  740 
+
+Address =  261 --- Data =  839 
+
+Address =  262 --- Data =  938 
+
+Address =  263 --- Data =   37 
+
+Address =  264 --- Data =  136 
+
+Address =  265 --- Data =  235 
+
+Address =  266 --- Data =  334 
+
+Address =  267 --- Data =  433 
+
+Address =  268 --- Data =  532 
+
+Address =  269 --- Data =  631 
+
+Address =  270 --- Data =  730 
+
+Address =  271 --- Data =  829 
+
+Address =  272 --- Data =  928 
+
+Address =  273 --- Data =   27 
+
+Address =  274 --- Data =  126 
+
+Address =  275 --- Data =  225 
+
+Address =  276 --- Data =  324 
+
+Address =  277 --- Data =  423 
+
+Address =  278 --- Data =  522 
+
+Address =  279 --- Data =  621 
+
+Address =  280 --- Data =  720 
+
+Address =  281 --- Data =  819 
+
+Address =  282 --- Data =  918 
+
+Address =  283 --- Data =   17 
+
+Address =  284 --- Data =  116 
+
+Address =  285 --- Data =  215 
+
+Address =  286 --- Data =  314 
+
+Address =  287 --- Data =  413 
+
+Address =  288 --- Data =  512 
+
+Address =  289 --- Data =  611 
+
+Address =  290 --- Data =  710 
+
+Address =  291 --- Data =  809 
+
+Address =  292 --- Data =  908 
+
+Address =  293 --- Data =    7 
+
+Address =  294 --- Data =  106 
+
+Address =  295 --- Data =  205 
+
+Address =  296 --- Data =  304 
+
+Address =  297 --- Data =  403 
+
+Address =  298 --- Data =  502 
+
+Address =  299 --- Data =  601 
+
+Address =  300 --- Data =  700 
+
+Address =  301 --- Data =  799 
+
+Address =  302 --- Data =  898 
+
+Address =  303 --- Data =  997 
+
+Address =  304 --- Data =   96 
+
+Address =  305 --- Data =  195 
+
+Address =  306 --- Data =  294 
+
+Address =  307 --- Data =  393 
+
+Address =  308 --- Data =  492 
+
+Address =  309 --- Data =  591 
+
+Address =  310 --- Data =  690 
+
+Address =  311 --- Data =  789 
+
+Address =  312 --- Data =  888 
+
+Address =  313 --- Data =  987 
+
+Address =  314 --- Data =   86 
+
+Address =  315 --- Data =  185 
+
+Address =  316 --- Data =  284 
+
+Address =  317 --- Data =  383 
+
+Address =  318 --- Data =  482 
+
+Address =  319 --- Data =  581 
+
+Address =  320 --- Data =  680 
+
+Address =  321 --- Data =  779 
+
+Address =  322 --- Data =  878 
+
+Address =  323 --- Data =  977 
+
+Address =  324 --- Data =   76 
+
+Address =  325 --- Data =  175 
+
+Address =  326 --- Data =  274 
+
+Address =  327 --- Data =  373 
+
+Address =  328 --- Data =  472 
+
+Address =  329 --- Data =  571 
+
+Address =  330 --- Data =  670 
+
+Address =  331 --- Data =  769 
+
+Address =  332 --- Data =  868 
+
+Address =  333 --- Data =  967 
+
+Address =  334 --- Data =   66 
+
+Address =  335 --- Data =  165 
+
+Address =  336 --- Data =  264 
+
+Address =  337 --- Data =  363 
+
+Address =  338 --- Data =  462 
+
+Address =  339 --- Data =  561 
+
+Address =  340 --- Data =  660 
+
+Address =  341 --- Data =  759 
+
+Address =  342 --- Data =  858 
+
+Address =  343 --- Data =  957 
+
+Address =  344 --- Data =   56 
+
+Address =  345 --- Data =  155 
+
+Address =  346 --- Data =  254 
+
+Address =  347 --- Data =  353 
+
+Address =  348 --- Data =  452 
+
+Address =  349 --- Data =  551 
+
+Address =  350 --- Data =  650 
+
+Address =  351 --- Data =  749 
+
+Address =  352 --- Data =  848 
+
+Address =  353 --- Data =  947 
+
+Address =  354 --- Data =   46 
+
+Address =  355 --- Data =  145 
+
+Address =  356 --- Data =  244 
+
+Address =  357 --- Data =  343 
+
+Address =  358 --- Data =  442 
+
+Address =  359 --- Data =  541 
+
+Address =  360 --- Data =  640 
+
+Address =  361 --- Data =  739 
+
+Address =  362 --- Data =  838 
+
+Address =  363 --- Data =  937 
+
+Address =  364 --- Data =   36 
+
+Address =  365 --- Data =  135 
+
+Address =  366 --- Data =  234 
+
+Address =  367 --- Data =  333 
+
+Address =  368 --- Data =  432 
+
+Address =  369 --- Data =  531 
+
+Address =  370 --- Data =  630 
+
+Address =  371 --- Data =  729 
+
+Address =  372 --- Data =  828 
+
+Address =  373 --- Data =  927 
+
+Address =  374 --- Data =   26 
+
+Address =  375 --- Data =  125 
+
+Address =  376 --- Data =  224 
+
+Address =  377 --- Data =  323 
+
+Address =  378 --- Data =  422 
+
+Address =  379 --- Data =  521 
+
+Address =  380 --- Data =  620 
+
+Address =  381 --- Data =  719 
+
+Address =  382 --- Data =  818 
+
+Address =  383 --- Data =  917 
+
+Address =  384 --- Data =   16 
+
+Address =  385 --- Data =  115 
+
+Address =  386 --- Data =  214 
+
+Address =  387 --- Data =  313 
+
+Address =  388 --- Data =  412 
+
+Address =  389 --- Data =  511 
+
+Address =  390 --- Data =  610 
+
+Address =  391 --- Data =  709 
+
+Address =  392 --- Data =  808 
+
+Address =  393 --- Data =  907 
+
+Address =  394 --- Data =    6 
+
+Address =  395 --- Data =  105 
+
+Address =  396 --- Data =  204 
+
+Address =  397 --- Data =  303 
+
+Address =  398 --- Data =  402 
+
+Address =  399 --- Data =  501 
+
+Address =  400 --- Data =  600 
+
+Address =  401 --- Data =  699 
+
+Address =  402 --- Data =  798 
+
+Address =  403 --- Data =  897 
+
+Address =  404 --- Data =  996 
+
+Address =  405 --- Data =   95 
+
+Address =  406 --- Data =  194 
+
+Address =  407 --- Data =  293 
+
+Address =  408 --- Data =  392 
+
+Address =  409 --- Data =  491 
+
+Address =  410 --- Data =  590 
+
+Address =  411 --- Data =  689 
+
+Address =  412 --- Data =  788 
+
+Address =  413 --- Data =  887 
+
+Address =  414 --- Data =  986 
+
+Address =  415 --- Data =   85 
+
+Address =  416 --- Data =  184 
+
+Address =  417 --- Data =  283 
+
+Address =  418 --- Data =  382 
+
+Address =  419 --- Data =  481 
+
+Address =  420 --- Data =  580 
+
+Address =  421 --- Data =  679 
+
+Address =  422 --- Data =  778 
+
+Address =  423 --- Data =  877 
+
+Address =  424 --- Data =  976 
+
+Address =  425 --- Data =   75 
+
+Address =  426 --- Data =  174 
+
+Address =  427 --- Data =  273 
+
+Address =  428 --- Data =  372 
+
+Address =  429 --- Data =  471 
+
+Address =  430 --- Data =  570 
+
+Address =  431 --- Data =  669 
+
+Address =  432 --- Data =  768 
+
+Address =  433 --- Data =  867 
+
+Address =  434 --- Data =  966 
+
+Address =  435 --- Data =   65 
+
+Address =  436 --- Data =  164 
+
+Address =  437 --- Data =  263 
+
+Address =  438 --- Data =  362 
+
+Address =  439 --- Data =  461 
+
+Address =  440 --- Data =  560 
+
+Address =  441 --- Data =  659 
+
+Address =  442 --- Data =  758 
+
+Address =  443 --- Data =  857 
+
+Address =  444 --- Data =  956 
+
+Address =  445 --- Data =   55 
+
+Address =  446 --- Data =  154 
+
+Address =  447 --- Data =  253 
+
+Address =  448 --- Data =  352 
+
+Address =  449 --- Data =  451 
+
+Address =  450 --- Data =  550 
+
+Address =  451 --- Data =  649 
+
+Address =  452 --- Data =  748 
+
+Address =  453 --- Data =  847 
+
+Address =  454 --- Data =  946 
+
+Address =  455 --- Data =   45 
+
+Address =  456 --- Data =  144 
+
+Address =  457 --- Data =  243 
+
+Address =  458 --- Data =  342 
+
+Address =  459 --- Data =  441 
+
+Address =  460 --- Data =  540 
+
+Address =  461 --- Data =  639 
+
+Address =  462 --- Data =  738 
+
+Address =  463 --- Data =  837 
+
+Address =  464 --- Data =  936 
+
+Address =  465 --- Data =   35 
+
+Address =  466 --- Data =  134 
+
+Address =  467 --- Data =  233 
+
+Address =  468 --- Data =  332 
+
+Address =  469 --- Data =  431 
+
+Address =  470 --- Data =  530 
+
+Address =  471 --- Data =  629 
+
+Address =  472 --- Data =  728 
+
+Address =  473 --- Data =  827 
+
+Address =  474 --- Data =  926 
+
+Address =  475 --- Data =   25 
+
+Address =  476 --- Data =  124 
+
+Address =  477 --- Data =  223 
+
+Address =  478 --- Data =  322 
+
+Address =  479 --- Data =  421 
+
+Address =  480 --- Data =  520 
+
+Address =  481 --- Data =  619 
+
+Address =  482 --- Data =  718 
+
+Address =  483 --- Data =  817 
+
+Address =  484 --- Data =  916 
+
+Address =  485 --- Data =   15 
+
+Address =  486 --- Data =  114 
+
+Address =  487 --- Data =  213 
+
+Address =  488 --- Data =  312 
+
+Address =  489 --- Data =  411 
+
+Address =  490 --- Data =  510 
+
+Address =  491 --- Data =  609 
+
+Address =  492 --- Data =  708 
+
+Address =  493 --- Data =  807 
+
+Address =  494 --- Data =  906 
+
+Address =  495 --- Data =    5 
+
+Address =  496 --- Data =  104 
+
+Address =  497 --- Data =  203 
+
+Address =  498 --- Data =  302 
+
+Address =  499 --- Data =  401 
+
+Address =  500 --- Data =  500 
+
+Address =  501 --- Data =  599 
+
+Address =  502 --- Data =  698 
+
+Address =  503 --- Data =  797 
+
+Address =  504 --- Data =  896 
+
+Address =  505 --- Data =  995 
+
+Address =  506 --- Data =   94 
+
+Address =  507 --- Data =  193 
+
+Address =  508 --- Data =  292 
+
+Address =  509 --- Data =  391 
+
+Address =  510 --- Data =  490 
+
+Address =  511 --- Data =  589 
+
+Address =  512 --- Data =  688 
+
+Address =  513 --- Data =  787 
+
+Address =  514 --- Data =  886 
+
+Address =  515 --- Data =  985 
+
+Address =  516 --- Data =   84 
+
+Address =  517 --- Data =  183 
+
+Address =  518 --- Data =  282 
+
+Address =  519 --- Data =  381 
+
+Address =  520 --- Data =  480 
+
+Address =  521 --- Data =  579 
+
+Address =  522 --- Data =  678 
+
+Address =  523 --- Data =  777 
+
+Address =  524 --- Data =  876 
+
+Address =  525 --- Data =  975 
+
+Address =  526 --- Data =   74 
+
+Address =  527 --- Data =  173 
+
+Address =  528 --- Data =  272 
+
+Address =  529 --- Data =  371 
+
+Address =  530 --- Data =  470 
+
+Address =  531 --- Data =  569 
+
+Address =  532 --- Data =  668 
+
+Address =  533 --- Data =  767 
+
+Address =  534 --- Data =  866 
+
+Address =  535 --- Data =  965 
+
+Address =  536 --- Data =   64 
+
+Address =  537 --- Data =  163 
+
+Address =  538 --- Data =  262 
+
+Address =  539 --- Data =  361 
+
+Address =  540 --- Data =  460 
+
+Address =  541 --- Data =  559 
+
+Address =  542 --- Data =  658 
+
+Address =  543 --- Data =  757 
+
+Address =  544 --- Data =  856 
+
+Address =  545 --- Data =  955 
+
+Address =  546 --- Data =   54 
+
+Address =  547 --- Data =  153 
+
+Address =  548 --- Data =  252 
+
+Address =  549 --- Data =  351 
+
+Address =  550 --- Data =  450 
+
+Address =  551 --- Data =  549 
+
+Address =  552 --- Data =  648 
+
+Address =  553 --- Data =  747 
+
+Address =  554 --- Data =  846 
+
+Address =  555 --- Data =  945 
+
+Address =  556 --- Data =   44 
+
+Address =  557 --- Data =  143 
+
+Address =  558 --- Data =  242 
+
+Address =  559 --- Data =  341 
+
+Address =  560 --- Data =  440 
+
+Address =  561 --- Data =  539 
+
+Address =  562 --- Data =  638 
+
+Address =  563 --- Data =  737 
+
+Address =  564 --- Data =  836 
+
+Address =  565 --- Data =  935 
+
+Address =  566 --- Data =   34 
+
+Address =  567 --- Data =  133 
+
+Address =  568 --- Data =  232 
+
+Address =  569 --- Data =  331 
+
+Address =  570 --- Data =  430 
+
+Address =  571 --- Data =  529 
+
+Address =  572 --- Data =  628 
+
+Address =  573 --- Data =  727 
+
+Address =  574 --- Data =  826 
+
+Address =  575 --- Data =  925 
+
+Address =  576 --- Data =   24 
+
+Address =  577 --- Data =  123 
+
+Address =  578 --- Data =  222 
+
+Address =  579 --- Data =  321 
+
+Address =  580 --- Data =  420 
+
+Address =  581 --- Data =  519 
+
+Address =  582 --- Data =  618 
+
+Address =  583 --- Data =  717 
+
+Address =  584 --- Data =  816 
+
+Address =  585 --- Data =  915 
+
+Address =  586 --- Data =   14 
+
+Address =  587 --- Data =  113 
+
+Address =  588 --- Data =  212 
+
+Address =  589 --- Data =  311 
+
+Address =  590 --- Data =  410 
+
+Address =  591 --- Data =  509 
+
+Address =  592 --- Data =  608 
+
+Address =  593 --- Data =  707 
+
+Address =  594 --- Data =  806 
+
+Address =  595 --- Data =  905 
+
+Address =  596 --- Data =    4 
+
+Address =  597 --- Data =  103 
+
+Address =  598 --- Data =  202 
+
+Address =  599 --- Data =  301 
+
+Address =  600 --- Data =  400 
+
+Address =  601 --- Data =  499 
+
+Address =  602 --- Data =  598 
+
+Address =  603 --- Data =  697 
+
+Address =  604 --- Data =  796 
+
+Address =  605 --- Data =  895 
+
+Address =  606 --- Data =  994 
+
+Address =  607 --- Data =   93 
+
+Address =  608 --- Data =  192 
+
+Address =  609 --- Data =  291 
+
+Address =  610 --- Data =  390 
+
+Address =  611 --- Data =  489 
+
+Address =  612 --- Data =  588 
+
+Address =  613 --- Data =  687 
+
+Address =  614 --- Data =  786 
+
+Address =  615 --- Data =  885 
+
+Address =  616 --- Data =  984 
+
+Address =  617 --- Data =   83 
+
+Address =  618 --- Data =  182 
+
+Address =  619 --- Data =  281 
+
+Address =  620 --- Data =  380 
+
+Address =  621 --- Data =  479 
+
+Address =  622 --- Data =  578 
+
+Address =  623 --- Data =  677 
+
+Address =  624 --- Data =  776 
+
+Address =  625 --- Data =  875 
+
+Address =  626 --- Data =  974 
+
+Address =  627 --- Data =   73 
+
+Address =  628 --- Data =  172 
+
+Address =  629 --- Data =  271 
+
+Address =  630 --- Data =  370 
+
+Address =  631 --- Data =  469 
+
+Address =  632 --- Data =  568 
+
+Address =  633 --- Data =  667 
+
+Address =  634 --- Data =  766 
+
+Address =  635 --- Data =  865 
+
+Address =  636 --- Data =  964 
+
+Address =  637 --- Data =   63 
+
+Address =  638 --- Data =  162 
+
+Address =  639 --- Data =  261 
+
+Address =  640 --- Data =  360 
+
+Address =  641 --- Data =  459 
+
+Address =  642 --- Data =  558 
+
+Address =  643 --- Data =  657 
+
+Address =  644 --- Data =  756 
+
+Address =  645 --- Data =  855 
+
+Address =  646 --- Data =  954 
+
+Address =  647 --- Data =   53 
+
+Address =  648 --- Data =  152 
+
+Address =  649 --- Data =  251 
+
+Address =  650 --- Data =  350 
+
+Address =  651 --- Data =  449 
+
+Address =  652 --- Data =  548 
+
+Address =  653 --- Data =  647 
+
+Address =  654 --- Data =  746 
+
+Address =  655 --- Data =  845 
+
+Address =  656 --- Data =  944 
+
+Address =  657 --- Data =   43 
+
+Address =  658 --- Data =  142 
+
+Address =  659 --- Data =  241 
+
+Address =  660 --- Data =  340 
+
+Address =  661 --- Data =  439 
+
+Address =  662 --- Data =  538 
+
+Address =  663 --- Data =  637 
+
+Address =  664 --- Data =  736 
+
+Address =  665 --- Data =  835 
+
+Address =  666 --- Data =  934 
+
+Address =  667 --- Data =   33 
+
+Address =  668 --- Data =  132 
+
+Address =  669 --- Data =  231 
+
+Address =  670 --- Data =  330 
+
+Address =  671 --- Data =  429 
+
+Address =  672 --- Data =  528 
+
+Address =  673 --- Data =  627 
+
+Address =  674 --- Data =  726 
+
+Address =  675 --- Data =  825 
+
+Address =  676 --- Data =  924 
+
+Address =  677 --- Data =   23 
+
+Address =  678 --- Data =  122 
+
+Address =  679 --- Data =  221 
+
+Address =  680 --- Data =  320 
+
+Address =  681 --- Data =  419 
+
+Address =  682 --- Data =  518 
+
+Address =  683 --- Data =  617 
+
+Address =  684 --- Data =  716 
+
+Address =  685 --- Data =  815 
+
+Address =  686 --- Data =  914 
+
+Address =  687 --- Data =   13 
+
+Address =  688 --- Data =  112 
+
+Address =  689 --- Data =  211 
+
+Address =  690 --- Data =  310 
+
+Address =  691 --- Data =  409 
+
+Address =  692 --- Data =  508 
+
+Address =  693 --- Data =  607 
+
+Address =  694 --- Data =  706 
+
+Address =  695 --- Data =  805 
+
+Address =  696 --- Data =  904 
+
+Address =  697 --- Data =    3 
+
+Address =  698 --- Data =  102 
+
+Address =  699 --- Data =  201 
+
+Address =  700 --- Data =  300 
+
+Address =  701 --- Data =  399 
+
+Address =  702 --- Data =  498 
+
+Address =  703 --- Data =  597 
+
+Address =  704 --- Data =  696 
+
+Address =  705 --- Data =  795 
+
+Address =  706 --- Data =  894 
+
+Address =  707 --- Data =  993 
+
+Address =  708 --- Data =   92 
+
+Address =  709 --- Data =  191 
+
+Address =  710 --- Data =  290 
+
+Address =  711 --- Data =  389 
+
+Address =  712 --- Data =  488 
+
+Address =  713 --- Data =  587 
+
+Address =  714 --- Data =  686 
+
+Address =  715 --- Data =  785 
+
+Address =  716 --- Data =  884 
+
+Address =  717 --- Data =  983 
+
+Address =  718 --- Data =   82 
+
+Address =  719 --- Data =  181 
+
+Address =  720 --- Data =  280 
+
+Address =  721 --- Data =  379 
+
+Address =  722 --- Data =  478 
+
+Address =  723 --- Data =  577 
+
+Address =  724 --- Data =  676 
+
+Address =  725 --- Data =  775 
+
+Address =  726 --- Data =  874 
+
+Address =  727 --- Data =  973 
+
+Address =  728 --- Data =   72 
+
+Address =  729 --- Data =  171 
+
+Address =  730 --- Data =  270 
+
+Address =  731 --- Data =  369 
+
+Address =  732 --- Data =  468 
+
+Address =  733 --- Data =  567 
+
+Address =  734 --- Data =  666 
+
+Address =  735 --- Data =  765 
+
+Address =  736 --- Data =  864 
+
+Address =  737 --- Data =  963 
+
+Address =  738 --- Data =   62 
+
+Address =  739 --- Data =  161 
+
+Address =  740 --- Data =  260 
+
+Address =  741 --- Data =  359 
+
+Address =  742 --- Data =  458 
+
+Address =  743 --- Data =  557 
+
+Address =  744 --- Data =  656 
+
+Address =  745 --- Data =  755 
+
+Address =  746 --- Data =  854 
+
+Address =  747 --- Data =  953 
+
+Address =  748 --- Data =   52 
+
+Address =  749 --- Data =  151 
+
+Address =  750 --- Data =  250 
+
+Address =  751 --- Data =  349 
+
+Address =  752 --- Data =  448 
+
+Address =  753 --- Data =  547 
+
+Address =  754 --- Data =  646 
+
+Address =  755 --- Data =  745 
+
+Address =  756 --- Data =  844 
+
+Address =  757 --- Data =  943 
+
+Address =  758 --- Data =   42 
+
+Address =  759 --- Data =  141 
+
+Address =  760 --- Data =  240 
+
+Address =  761 --- Data =  339 
+
+Address =  762 --- Data =  438 
+
+Address =  763 --- Data =  537 
+
+Address =  764 --- Data =  636 
+
+Address =  765 --- Data =  735 
+
+Address =  766 --- Data =  834 
+
+Address =  767 --- Data =  933 
+
+Address =  768 --- Data =   32 
+
+Address =  769 --- Data =  131 
+
+Address =  770 --- Data =  230 
+
+Address =  771 --- Data =  329 
+
+Address =  772 --- Data =  428 
+
+Address =  773 --- Data =  527 
+
+Address =  774 --- Data =  626 
+
+Address =  775 --- Data =  725 
+
+Address =  776 --- Data =  824 
+
+Address =  777 --- Data =  923 
+
+Address =  778 --- Data =   22 
+
+Address =  779 --- Data =  121 
+
+Address =  780 --- Data =  220 
+
+Address =  781 --- Data =  319 
+
+Address =  782 --- Data =  418 
+
+Address =  783 --- Data =  517 
+
+Address =  784 --- Data =  616 
+
+Address =  785 --- Data =  715 
+
+Address =  786 --- Data =  814 
+
+Address =  787 --- Data =  913 
+
+Address =  788 --- Data =   12 
+
+Address =  789 --- Data =  111 
+
+Address =  790 --- Data =  210 
+
+Address =  791 --- Data =  309 
+
+Address =  792 --- Data =  408 
+
+Address =  793 --- Data =  507 
+
+Address =  794 --- Data =  606 
+
+Address =  795 --- Data =  705 
+
+Address =  796 --- Data =  804 
+
+Address =  797 --- Data =  903 
+
+Address =  798 --- Data =    2 
+
+Address =  799 --- Data =  101 
+
+Address =  800 --- Data =  200 
+
+Address =  801 --- Data =  299 
+
+Address =  802 --- Data =  398 
+
+Address =  803 --- Data =  497 
+
+Address =  804 --- Data =  596 
+
+Address =  805 --- Data =  695 
+
+Address =  806 --- Data =  794 
+
+Address =  807 --- Data =  893 
+
+Address =  808 --- Data =  992 
+
+Address =  809 --- Data =   91 
+
+Address =  810 --- Data =  190 
+
+Address =  811 --- Data =  289 
+
+Address =  812 --- Data =  388 
+
+Address =  813 --- Data =  487 
+
+Address =  814 --- Data =  586 
+
+Address =  815 --- Data =  685 
+
+Address =  816 --- Data =  784 
+
+Address =  817 --- Data =  883 
+
+Address =  818 --- Data =  982 
+
+Address =  819 --- Data =   81 
+
+Address =  820 --- Data =  180 
+
+Address =  821 --- Data =  279 
+
+Address =  822 --- Data =  378 
+
+Address =  823 --- Data =  477 
+
+Address =  824 --- Data =  576 
+
+Address =  825 --- Data =  675 
+
+Address =  826 --- Data =  774 
+
+Address =  827 --- Data =  873 
+
+Address =  828 --- Data =  972 
+
+Address =  829 --- Data =   71 
+
+Address =  830 --- Data =  170 
+
+Address =  831 --- Data =  269 
+
+Address =  832 --- Data =  368 
+
+Address =  833 --- Data =  467 
+
+Address =  834 --- Data =  566 
+
+Address =  835 --- Data =  665 
+
+Address =  836 --- Data =  764 
+
+Address =  837 --- Data =  863 
+
+Address =  838 --- Data =  962 
+
+Address =  839 --- Data =   61 
+
+Address =  840 --- Data =  160 
+
+Address =  841 --- Data =  259 
+
+Address =  842 --- Data =  358 
+
+Address =  843 --- Data =  457 
+
+Address =  844 --- Data =  556 
+
+Address =  845 --- Data =  655 
+
+Address =  846 --- Data =  754 
+
+Address =  847 --- Data =  853 
+
+Address =  848 --- Data =  952 
+
+Address =  849 --- Data =   51 
+
+Address =  850 --- Data =  150 
+
+Address =  851 --- Data =  249 
+
+Address =  852 --- Data =  348 
+
+Address =  853 --- Data =  447 
+
+Address =  854 --- Data =  546 
+
+Address =  855 --- Data =  645 
+
+Address =  856 --- Data =  744 
+
+Address =  857 --- Data =  843 
+
+Address =  858 --- Data =  942 
+
+Address =  859 --- Data =   41 
+
+Address =  860 --- Data =  140 
+
+Address =  861 --- Data =  239 
+
+Address =  862 --- Data =  338 
+
+Address =  863 --- Data =  437 
+
+Address =  864 --- Data =  536 
+
+Address =  865 --- Data =  635 
+
+Address =  866 --- Data =  734 
+
+Address =  867 --- Data =  833 
+
+Address =  868 --- Data =  932 
+
+Address =  869 --- Data =   31 
+
+Address =  870 --- Data =  130 
+
+Address =  871 --- Data =  229 
+
+Address =  872 --- Data =  328 
+
+Address =  873 --- Data =  427 
+
+Address =  874 --- Data =  526 
+
+Address =  875 --- Data =  625 
+
+Address =  876 --- Data =  724 
+
+Address =  877 --- Data =  823 
+
+Address =  878 --- Data =  922 
+
+Address =  879 --- Data =   21 
+
+Address =  880 --- Data =  120 
+
+Address =  881 --- Data =  219 
+
+Address =  882 --- Data =  318 
+
+Address =  883 --- Data =  417 
+
+Address =  884 --- Data =  516 
+
+Address =  885 --- Data =  615 
+
+Address =  886 --- Data =  714 
+
+Address =  887 --- Data =  813 
+
+Address =  888 --- Data =  912 
+
+Address =  889 --- Data =   11 
+
+Address =  890 --- Data =  110 
+
+Address =  891 --- Data =  209 
+
+Address =  892 --- Data =  308 
+
+Address =  893 --- Data =  407 
+
+Address =  894 --- Data =  506 
+
+Address =  895 --- Data =  605 
+
+Address =  896 --- Data =  704 
+
+Address =  897 --- Data =  803 
+
+Address =  898 --- Data =  902 
+
+Address =  899 --- Data =    1 
+
+Address =  900 --- Data =  100 
+
+Address =  901 --- Data =  199 
+
+Address =  902 --- Data =  298 
+
+Address =  903 --- Data =  397 
+
+Address =  904 --- Data =  496 
+
+Address =  905 --- Data =  595 
+
+Address =  906 --- Data =  694 
+
+Address =  907 --- Data =  793 
+
+Address =  908 --- Data =  892 
+
+Address =  909 --- Data =  991 
+
+Address =  910 --- Data =   90 
+
+Address =  911 --- Data =  189 
+
+Address =  912 --- Data =  288 
+
+Address =  913 --- Data =  387 
+
+Address =  914 --- Data =  486 
+
+Address =  915 --- Data =  585 
+
+Address =  916 --- Data =  684 
+
+Address =  917 --- Data =  783 
+
+Address =  918 --- Data =  882 
+
+Address =  919 --- Data =  981 
+
+Address =  920 --- Data =   80 
+
+Address =  921 --- Data =  179 
+
+Address =  922 --- Data =  278 
+
+Address =  923 --- Data =  377 
+
+Address =  924 --- Data =  476 
+
+Address =  925 --- Data =  575 
+
+Address =  926 --- Data =  674 
+
+Address =  927 --- Data =  773 
+
+Address =  928 --- Data =  872 
+
+Address =  929 --- Data =  971 
+
+Address =  930 --- Data =   70 
+
+Address =  931 --- Data =  169 
+
+Address =  932 --- Data =  268 
+
+Address =  933 --- Data =  367 
+
+Address =  934 --- Data =  466 
+
+Address =  935 --- Data =  565 
+
+Address =  936 --- Data =  664 
+
+Address =  937 --- Data =  763 
+
+Address =  938 --- Data =  862 
+
+Address =  939 --- Data =  961 
+
+Address =  940 --- Data =   60 
+
+Address =  941 --- Data =  159 
+
+Address =  942 --- Data =  258 
+
+Address =  943 --- Data =  357 
+
+Address =  944 --- Data =  456 
+
+Address =  945 --- Data =  555 
+
+Address =  946 --- Data =  654 
+
+Address =  947 --- Data =  753 
+
+Address =  948 --- Data =  852 
+
+Address =  949 --- Data =  951 
+
+Address =  950 --- Data =   50 
+
+Address =  951 --- Data =  149 
+
+Address =  952 --- Data =  248 
+
+Address =  953 --- Data =  347 
+
+Address =  954 --- Data =  446 
+
+Address =  955 --- Data =  545 
+
+Address =  956 --- Data =  644 
+
+Address =  957 --- Data =  743 
+
+Address =  958 --- Data =  842 
+
+Address =  959 --- Data =  941 
+
+Address =  960 --- Data =   40 
+
+Address =  961 --- Data =  139 
+
+Address =  962 --- Data =  238 
+
+Address =  963 --- Data =  337 
+
+Address =  964 --- Data =  436 
+
+Address =  965 --- Data =  535 
+
+Address =  966 --- Data =  634 
+
+Address =  967 --- Data =  733 
+
+Address =  968 --- Data =  832 
+
+Address =  969 --- Data =  931 
+
+Address =  970 --- Data =   30 
+
+Address =  971 --- Data =  129 
+
+Address =  972 --- Data =  228 
+
+Address =  973 --- Data =  327 
+
+Address =  974 --- Data =  426 
+
+Address =  975 --- Data =  525 
+
+Address =  976 --- Data =  624 
+
+Address =  977 --- Data =  723 
+
+Address =  978 --- Data =  822 
+
+Address =  979 --- Data =  921 
+
+Address =  980 --- Data =   20 
+
+Address =  981 --- Data =  119 
+
+Address =  982 --- Data =  218 
+
+Address =  983 --- Data =  317 
+
+Address =  984 --- Data =  416 
+
+Address =  985 --- Data =  515 
+
+Address =  986 --- Data =  614 
+
+Address =  987 --- Data =  713 
+
+Address =  988 --- Data =  812 
+
+Address =  989 --- Data =  911 
+
+Address =  990 --- Data =   10 
+
+Address =  991 --- Data =  109 
+
+Address =  992 --- Data =  208 
+
+Address =  993 --- Data =  307 
+
+Address =  994 --- Data =  406 
+
+Address =  995 --- Data =  505 
+
+Address =  996 --- Data =  604 
+
+Address =  997 --- Data =  703 
+
+Address =  998 --- Data =  802 
+
+Address =  999 --- Data =  901 
+
+Address = 1000 --- Data =    0 
+
+Address = 1001 --- Data =   99 
+
+Address = 1002 --- Data =  198 
+
+Address = 1003 --- Data =  297 
+
+Address = 1004 --- Data =  396 
+
+Address = 1005 --- Data =  495 
+
+Address = 1006 --- Data =  594 
+
+Address = 1007 --- Data =  693 
+
+Address = 1008 --- Data =  792 
+
+Address = 1009 --- Data =  891 
+
+Address = 1010 --- Data =  990 
+
+Address = 1011 --- Data =   89 
+
+Address = 1012 --- Data =  188 
+
+Address = 1013 --- Data =  287 
+
+Address = 1014 --- Data =  386 
+
+Address = 1015 --- Data =  485 
+
+Address = 1016 --- Data =  584 
+
+Address = 1017 --- Data =  683 
+
+Address = 1018 --- Data =  782 
+
+Address = 1019 --- Data =  881 
+
+Address = 1020 --- Data =  980 
+
+Address = 1021 --- Data =   79 
+
+Address = 1022 --- Data =  178 
+
+Address = 1023 --- Data =  277 
+
+End of the Register File Test
+$finish called from file "tb.v", line 16.
+$finish at simulation time                 1024
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1024
+CPU Time:      0.180 seconds;       Data structure size:   0.0Mb
+Sat Nov 15 23:01:09 2025
+[dthornburg@linux402604 HW5]$ ^C
+[dthornburg@linux402604 HW5]$ 
+

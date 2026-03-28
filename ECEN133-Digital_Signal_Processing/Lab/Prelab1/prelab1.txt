@@ -1,0 +1,1 @@
+I have MATLAB, reviewed it, and made sure that I have the image processing and signal processing packages.

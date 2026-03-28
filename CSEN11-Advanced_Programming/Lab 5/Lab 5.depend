@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1666252506 source:d:\codeblocks\projects\lab 5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1666289656 source:c:\codeblocks\projects\lab 5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

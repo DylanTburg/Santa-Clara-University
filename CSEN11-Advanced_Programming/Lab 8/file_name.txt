@@ -1,0 +1,9 @@
+j k 10 
+f g 12 
+q r 4 
+d h 56 
+x c 34 
+g l 46 
+g j 78 
+d b 67 
+x m 89 

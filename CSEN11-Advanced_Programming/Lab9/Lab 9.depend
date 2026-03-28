@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1668673344 source:d:\codeblocks\projects2\lab 9\main.c
+	"library.h"
+
+1668673392 d:\codeblocks\projects2\lab 9\library.h
+	<stdio.h>
+	<pthread.h>
+	<stdlib.h>
+	<string.h>
+
+1668674437 source:d:\codeblocks\projects2\lab 9\files.c
+	"library.h"
+
+1668673250 source:d:\codeblocks\projects2\lab 9\list.c
+	"library.h"
+
+1668674437 source:c:\codeblocks\projects\lab 9\files.c
+	"library.h"
+
+1668673392 c:\codeblocks\projects\lab 9\library.h
+	<stdio.h>
+	<pthread.h>
+	<stdlib.h>
+	<string.h>
+
+1668673250 source:c:\codeblocks\projects\lab 9\list.c
+	"library.h"
+
+1668673344 source:c:\codeblocks\projects\lab 9\main.c
+	"library.h"
+
+1668707592 source:c:\codeblocks\projects\lab9\list.c
+	"library.h"
+
+1668673392 c:\codeblocks\projects\lab9\library.h
+	<stdio.h>
+	<pthread.h>
+	<stdlib.h>
+	<string.h>
+
+1668673344 source:c:\codeblocks\projects\lab9\main.c
+	"library.h"
+
+1668707521 source:c:\codeblocks\projects\lab9\files.c
+	"library.h"
+

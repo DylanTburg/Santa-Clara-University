@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1668707790 source:c:\codeblocks\projects\lab10\main.c
+	"library.h"
+
+1668897947 c:\codeblocks\projects\lab10\library.h
+	<stdio.h>
+	<pthread.h>
+	<stdlib.h>
+	<string.h>
+
+1669883705 source:c:\codeblocks\projects\lab10\files.c
+	"library.h"
+
+1668897947 source:c:\codeblocks\projects\lab10\list.c
+	"library.h"
+
+1669883705 source:d:\codeblocks\projects2\lab10\files.c
+	"library.h"
+
+1668897947 d:\codeblocks\projects2\lab10\library.h
+	<stdio.h>
+	<pthread.h>
+	<stdlib.h>
+	<string.h>
+
+1669871486 source:d:\codeblocks\projects2\lab10\list.c
+	"library.h"
+
+1668707790 source:d:\codeblocks\projects2\lab10\main.c
+	"library.h"
+

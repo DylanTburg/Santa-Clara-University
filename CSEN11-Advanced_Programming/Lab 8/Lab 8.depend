@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1668104266 source:c:\codeblocks\projects\lab 8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+
+1668047248 source:d:\codeblocks\projects2\lab 8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+

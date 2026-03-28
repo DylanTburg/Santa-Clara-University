@@ -1,0 +1,2 @@
+# ELEN-120
+A collection of my labs and personal projects/tools from ELEN 120 (microprocessor system design). Lab code is in ARM cortex m4 assembly and the tools are in C. Lab reports, pre-labs, homework, and the labs themselves are included. For homeworks that have separate assembly files (4,5, and 7), only HW 7 is really interesting. HW 7 consists of selection sort for both numbers and strings in assembly. HW 5 and HW 4 are relatively niche and were more exercises to learn assembly vs actually making something.

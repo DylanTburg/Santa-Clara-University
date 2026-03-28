@@ -1,0 +1,1 @@
+This project determines whether an immediate constant can be used for ARM Cortex M4. Simply type in the constant you want to use and it will determine if it's valid or not based on ARM's rules. Useful for ELEN 120 labs, homework, and tests.

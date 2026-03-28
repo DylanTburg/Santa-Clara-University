@@ -1,0 +1,36 @@
+
+	
+;******************** (C) Andrew Wolfe *******************************************
+; @file    HW4 Problem 3
+; @author  Andrew Wolfe
+; @date    Aug. 13, 2023
+;*******************************************************************************
+
+	
+			AREA    main, CODE, READONLY
+			EXPORT	__main				
+			ENTRY			
+				
+__main	PROC
+	
+			ldr 	r2,=listsize
+			ldr		r3,[r2]
+			ldr		r2,=list
+			mov 	r0,#0
+loop 		ldrb 	r1,[r2]
+			sxtb	r1,r1
+			cmp		r1,#0
+			addgt	r0,#1
+			add 	r2,#1
+			subs	r3,#1
+			bne		loop
+
+endless		b			endless
+
+		ENDP
+		ALIGN
+list		dcb			-2, 0, 1, 5, -3, -5, 3, 9, 2, 12
+		ALIGN
+listsize	dcd			10
+	
+		END

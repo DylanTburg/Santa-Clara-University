@@ -1,0 +1,46 @@
+
+
+			AREA main, CODE, READONLY
+			EXPORT __main
+			ENTRY
+
+__main PROC
+		LDR     r0, =p
+		LDR     r0, [r0]       ; Load p from memory (e.g., 4 for the 4th Fibonacci number)
+		BL      fib             ; Call the Fibonacci calculation subroutine
+		MOV		r0, r4
+endless B endless            ; Endless loop to halt execution
+
+	ENDP
+
+fib PROC
+		CMP     r0, #0          ; Compare p with 0
+		BEQ     base0           ; If p=0, return 0
+		CMP     r0, #1          ; Compare p with 1
+		BEQ     base1           ; If p=1, return 1
+		PUSH    {r0, lr}		; Save p and r0
+		; Recursive call for p-1
+		SUB     r0, r0, #1      ; Decrement p for the first call to fib
+		BL      fib             ; Call fib with p-1
+		MOV     r4, r0          ; Store the result in r4
+		; Restore p and r0
+		POP     {r0, lr}
+		; Save r4
+		PUSH    {r4, lr}
+		; Recursive call for p-2
+		SUB     r0, r0, #1      ; Decrement p for the second call to fib
+		BL      fib             ; Call fib with p-2
+		ADD     r0, r4, r0      ; Add the results of the two recursive calls
+		; Restore r4
+		POP     {r4, lr}
+		BX      lr              ; Return
+base0   MOV     r0, #0      ; p=0, return 0
+        BX      lr
+base1   MOV     r0, #1      ; p=1, return 1
+        BX      lr
+
+	ENDP
+
+p DCD 5
+
+END

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1697617651 source:c:\codeblocks\projects\cpu flag simulator for arm\main.c
+	<stdio.h>
+	<stdlib.h>
+

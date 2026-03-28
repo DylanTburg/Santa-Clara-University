@@ -1,0 +1,98 @@
+;******************** (C) Andrew Wolfe *******************************************
+; @file    main_hw_proto.s
+; @author  Andrew Wolfe
+; @date    August 18, 2019
+; @note
+;           This code is for the book "Embedded Systems with ARM Cortex-M 
+;           Microcontrollers in Assembly Language and C, Yifeng Zhu, 
+;           ISBN-13: 978-0982692639, ISBN-10: 0982692633 as used at Santa Clara University
+;*******************************************************************************
+
+
+
+	INCLUDE core_cm4_constants.s		; Load Constant Definitions
+	INCLUDE stm32l476xx_constants.s   
+	
+			AREA    main, CODE, READONLY
+			EXPORT	__main				
+			ENTRY			
+				
+__main	PROC
+
+			ldr r8, =buffer
+			mov r6, #0
+			push{r1}
+			bl	porta_init
+loop		cmp r6, #5
+			beq endless
+			bl	read_jstick
+			bl	decode_stick
+			cmp r0, #0
+			beq loop
+			sub r5, r8, #1
+			ldr r7, [r5]
+			cmp r0, r7
+			beq loop
+			strb r0, [r8]
+			add r8, #1
+			add r6, #1
+			b loop
+endless		b endless
+
+	ENDP
+		
+porta_init	PROC
+			ldr r0, = RCC_BASE
+			add r0, #RCC_AHB2ENR
+			ldr r1, [r0]
+			orr r1, r1, #RCC_AHB2ENR_GPIOAEN
+			str r1, [r0]
+			ldr r0, = GPIOA_BASE
+			add r0, #GPIO_MODER
+			ldr r1, [r0]
+			bic r1, #(3 << (2*5))
+			bic r1, #0xff
+			str r1, [r0]
+			ldr r0, = GPIOA_BASE
+			add r0, #GPIO_PUPDR
+			ldr r1, [r0]
+			ldr r2, =0x8aa
+			orr r1,r2
+			str r1, [r0]
+			bx lr	
+	ENDP
+read_jstick	PROC
+			ldr r0, =GPIOA_BASE
+			ldrb r1, [r0, #GPIO_IDR]
+			and r0, r1, #0x2f
+			bx lr
+	ENDP
+decode_stick	PROC
+			
+			push {lr}
+			cmp r0, #0
+			ldreq r2, =0x0
+			cmp r0, #1
+			ldreq r2, =0x63
+			cmp r0, #2
+			ldreq r2, =0x6C
+			cmp r0, #4
+			ldreq r2, =0x72
+			cmp r0, #8
+			ldreq r2, =0x75
+			cmp r0, #0x20
+			ldreq r2, =0x64
+			mov r0, r2
+			pop {lr}
+			bx lr
+	
+	ENDP
+
+		ENDP
+			ALIGN						
+			AREA    myData, DATA, READWRITE
+			ALIGN			
+
+buffer	DCB		0,0,0,0,0
+
+	END

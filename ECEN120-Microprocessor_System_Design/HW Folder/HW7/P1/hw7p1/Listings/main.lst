@@ -1,0 +1,253 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;******************** (C) Andrew Wolfe *****************
+                       **************************
+    2 00000000         ; @file    HW7 Problem 1
+    3 00000000         ; @author  Andrew Wolfe
+    4 00000000         ; @date    2023
+    5 00000000         ;*******************************************************
+                       ************************
+    6 00000000         
+    7 00000000         
+    8 00000000                 AREA             main, CODE, READONLY
+    9 00000000                 EXPORT           __main
+   10 00000000                 ENTRY
+   11 00000000         
+   12 00000000         __main  PROC
+   13 00000000 F04F 0405       ldr              r4, =5      ;test to make sure 
+                                                            subroutine preserve
+                                                            d register values a
+                                                            re indeed preserved
+                                                            
+   14 00000004 F04F 0505       ldr              r5, =5
+   15 00000008 F04F 0605       ldr              r6, =5
+   16 0000000C F04F 0705       ldr              r7, =5
+   17 00000010 F04F 0805       ldr              r8, =5
+   18 00000014 F04F 0905       ldr              r9, =5
+   19 00000018 F04F 0A05       ldr              r10, =5
+   20 0000001C F04F 0B05       ldr              r11, =5
+   21 00000020 481B            ldr              r0, =array  ; Pointer to array 
+                                                            of string pointers
+   22 00000022 491C            ldr              r1, =endofarray ; end of array
+   23 00000024 E92D 0FF0       push             {r11,r10,r9,r8,r7,r6,r5,r4}
+   24 00000028 F7FF FFFE       bl               mysort      ; Call sorting rout
+                                                            ine
+   25 0000002C E8BD 0FF0       pop              {r4,r5,r6,r7,r8,r9,r10,r11}
+   26 00000030 E7FE    endless b                endless
+   27 00000032         
+   28 00000032                 ENDP
+   29 00000032         
+   30 00000032         
+   31 00000032         ; registers 4-11 must be preserved while in subroutines 
+                       which is why they are pushed and popped
+   32 00000032         
+   33 00000032         
+   34 00000032         mysort  PROC
+   35 00000032 F04F 0400       ldr              r4, =0
+   36 00000036 B500            push{lr}
+   37 00000038 F7FF FFFE 
+                       loop0   bl               compare_and_swap
+   38 0000003C 4814            ldr              r0, =array
+   39 0000003E F104 0404       add              r4, #4      ;increments r0 up t
+                                                            o the next value af
+                                                            ter a full loop
+   40 00000042 4420            add              r0, r4
+   41 00000044 4281            cmp              r1, r0
+   42 00000046 D1F7            bne              loop0
+   43 00000048 F85D EB04       pop{lr}
+   44 0000004C 4770    end     bx               lr
+   45 0000004E                 ENDP
+   46 0000004E         
+   47 0000004E         compare_and_swap
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+                               PROC
+   48 0000004E F04F 0801       mov              r8, #1      ;counter
+   49 00000052 F04F 0900       mov              r9, #0      ;r9 and r6 are used
+                                                             for constants in t
+                                                            he switching proces
+                                                            s
+   50 00000056 F04F 0600       mov              r6, #0
+   51 0000005A 6802            ldr              r2, [r0]
+   52 0000005C F100 0004       add              r0, #4
+   53 00000060 4288            cmp              r0, r1
+   54 00000062 D008            beq              back        ; check in case we'
+                                                            ve reached the end
+   55 00000064 6803    loop1   ldr              r3, [r0]
+   56 00000066 F06F 0603       mov              r6, #-4     ;used for offset
+   57 0000006A 4293            cmp              r3, r2
+   58 0000006C DB06            blt              swap
+   59 0000006E F100 0004       add              r0, #4
+   60 00000072 F108 0801       add              r8, #1
+   61 00000076 4281    back    cmp              r1, r0
+   62 00000078 D1F4            bne              loop1
+   63 0000007A 4770            bx               lr
+   64 0000007C 4617    swap    mov              r7, r2      ;swap with offset o
+                                                            f r8 times r6(-4)
+   65 0000007E 461A            mov              r2, r3
+   66 00000080 463B            mov              r3, r7
+   67 00000082 FB08 F906       mul              r9, r8, r6
+   68 00000086 F840 2009       str              r2, [r0, r9]
+   69 0000008A 6003            str              r3, [r0]
+   70 0000008C E7F3            b                back
+   71 0000008E                 ENDP
+   72 0000008E         
+   73 0000008E 00 00           ALIGN
+   74 00000090 00000000 
+              00000000 
+              00000000         AREA             mydata, DATA, READONLY
+   75 00000000         
+   76 00000000         
+   77 00000000 00000009 
+              00000002 
+              00000005 
+              00000001 
+              00000008 
+              00000006 
+              00000007 
+              00000000 
+              00000003 
+              00000004 array   DCD              9,2,5,1,8,6,7,0,3,4
+   78 00000028         endofarray
+   79 00000028         
+   80 00000028         
+   81 00000028                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=.\objects\main.d -o.\objects\main.o -IC:\Apps\Keil_v5\ARM\RV31\INC
+ -IC:\Apps\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 536" -
+-list=.\listings\main.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 12 in file main.s
+   Uses
+      At line 9 in file main.s
+Comment: __main used once
+back 00000076
+
+Symbol: back
+   Definitions
+      At line 61 in file main.s
+   Uses
+      At line 54 in file main.s
+      At line 70 in file main.s
+
+compare_and_swap 0000004E
+
+Symbol: compare_and_swap
+   Definitions
+      At line 47 in file main.s
+   Uses
+      At line 37 in file main.s
+Comment: compare_and_swap used once
+end 0000004C
+
+Symbol: end
+   Definitions
+      At line 44 in file main.s
+   Uses
+      None
+Comment: end unused
+endless 00000030
+
+Symbol: endless
+   Definitions
+      At line 26 in file main.s
+   Uses
+      At line 26 in file main.s
+Comment: endless used once
+loop0 00000038
+
+Symbol: loop0
+   Definitions
+      At line 37 in file main.s
+   Uses
+      At line 42 in file main.s
+Comment: loop0 used once
+loop1 00000064
+
+Symbol: loop1
+   Definitions
+      At line 55 in file main.s
+   Uses
+      At line 62 in file main.s
+Comment: loop1 used once
+main 00000000
+
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+Symbol: main
+   Definitions
+      At line 8 in file main.s
+   Uses
+      None
+Comment: main unused
+mysort 00000032
+
+Symbol: mysort
+   Definitions
+      At line 34 in file main.s
+   Uses
+      At line 24 in file main.s
+Comment: mysort used once
+swap 0000007C
+
+Symbol: swap
+   Definitions
+      At line 64 in file main.s
+   Uses
+      At line 58 in file main.s
+Comment: swap used once
+10 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+array 00000000
+
+Symbol: array
+   Definitions
+      At line 77 in file main.s
+   Uses
+      At line 21 in file main.s
+      At line 38 in file main.s
+
+endofarray 00000028
+
+Symbol: endofarray
+   Definitions
+      At line 78 in file main.s
+   Uses
+      At line 22 in file main.s
+Comment: endofarray used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 74 in file main.s
+   Uses
+      None
+Comment: mydata unused
+3 symbols
+346 symbols in table

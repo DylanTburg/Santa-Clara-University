@@ -1,0 +1,51 @@
+;******************** (C) Andrew Wolfe *******************************************
+; @file    main_hw_proto.s
+; @author  Andrew Wolfe
+; @date    August 18, 2019
+; @note
+;           This code is for the book "Embedded Systems with ARM Cortex-M 
+;           Microcontrollers in Assembly Language and C, Yifeng Zhu, 
+;           ISBN-13: 978-0982692639, ISBN-10: 0982692633 as used at Santa Clara University
+;*******************************************************************************
+
+
+
+	INCLUDE core_cm4_constants.s		; Load Constant Definitions
+	INCLUDE stm32l476xx_constants.s   
+	
+			AREA    main, CODE, READONLY
+			EXPORT	__main				
+			ENTRY			
+				
+__main	PROC
+	
+			LDR r0, =(RCC_BASE + RCC_AHB2ENR) ;activates red clock
+			LDR r1, [r0]
+			ORR r1, #RCC_AHB2ENR_GPIOBEN
+			STR r1, [r0]
+			
+			LDR r0, =(GPIOB_BASE+GPIO_MODER) ;sets up digital output
+			LDR r1, [r0]
+			BIC r1, r1, #(0x03<<(2*2))
+			ORR r1, r1, #(1<<(2*2))
+			STR r1, [r0]
+			
+			LDR r0, =(GPIOB_BASE+GPIO_OTYPER) ;sets reset states
+			LDR r1, [r0]
+			BIC r1, r1,#GPIO_OTYPER_OT_2
+			STR r1, [r0]
+			
+			LDR r0, =(GPIOB_BASE+GPIO_ODR) ;puts the led bit to high
+			LDR r1, [r0]
+			ORR r1, r1,#GPIO_ODR_ODR_2
+			STR r1, [r0]
+endless		b		endless
+
+		ENDP
+			ALIGN						
+			AREA    myData, DATA, READWRITE
+			ALIGN			
+
+counter		DCD		10
+
+	END

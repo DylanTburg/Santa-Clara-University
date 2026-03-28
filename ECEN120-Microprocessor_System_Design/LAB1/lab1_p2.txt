@@ -1,0 +1,24 @@
+;******************** (C) Andrew Wolfe *******************************************
+; @file    mainproto.s
+; @author  Andrew Wolfe
+; @date    August 18, 2019
+; @note
+;           This code is for the book "Embedded Systems with ARM Cortex-M 
+;           Microcontrollers in Assembly Language and C, Yifeng Zhu, 
+;           ISBN-13: 978-0982692639, ISBN-10: 0982692633 as used at Santa Clara University
+;*******************************************************************************
+
+	
+			AREA main, CODE, READONLY
+			EXPORT 		__main
+			ENTRY
+__main 		PROC
+			LDR r1, =value ;makes r1 a pointer to value
+			LDR r2, [r1]; loads r2 with the memory intialized number of r1
+			MVN r3, r2; moves not r2 into r3 
+			ADD r3, r3, #1; adds 1 to r3
+endless 	B 	endless
+			ENDP
+			ALIGN
+value 		DCD 0xFFFFFFFF; allocates and initializes memory for value
+					END

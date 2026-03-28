@@ -1,0 +1,4 @@
+Dependencies for Project 'Lab2', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\startup_cm4.s)(0x65134D63)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto -c-mlittle-endian -gdwarf-4-IC:/Apps/Keil_v5/ARM/RV31/INC-IC:/Apps/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536"-o ./objects/startup_cm4.o)
+F (.\main.s)(0x6535B59C)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto -c-mlittle-endian -gdwarf-4-IC:/Apps/Keil_v5/ARM/RV31/INC-IC:/Apps/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536"-o ./objects/main.o)

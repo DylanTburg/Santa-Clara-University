@@ -1,0 +1,32 @@
+;******************** (C) Andrew Wolfe *******************************************
+; @file    mainproto.s
+; @author  Andrew Wolfe
+; @date    August 18, 2019
+; @note
+;           This code is for the book "Embedded Systems with ARM Cortex-M 
+;           Microcontrollers in Assembly Language and C, Yifeng Zhu, 
+;           ISBN-13: 978-0982692639, ISBN-10: 0982692633 as used at Santa Clara University
+;*******************************************************************************
+
+	
+				AREA main, CODE, READONLY
+				EXPORT __main
+				ENTRY
+__main 		PROC
+			LDR r1, =list
+			LDR r2, [r1]
+			LSL r2, r2, #1
+			STR r2, [r1]
+			ADD r1, r1, #4
+			LDR r2, [r1]
+			LSL r2, r2, #1
+			STR r2, [r1]
+			ADD r1, r1, #4
+			LDR r2, [r1]
+			MOV r2, r2, LSL #1
+			STR r2, [r1]
+endless 	B 	endless
+			ENDP
+			ALIGN
+list 		DCD 3, 4, 5 ; three 32-bit numbers stored in memory
+	END

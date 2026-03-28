@@ -1,0 +1,1 @@
+This code is a flag simulator for ARM Cortex M4. It will tell you all flags as well as the result when adding or subtracting two 32-bit values. Useful for ELEN 120 labs, ELEN 120 homework, and ELEN 120 tests. 

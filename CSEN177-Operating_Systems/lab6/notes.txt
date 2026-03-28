@@ -1,0 +1,43 @@
+Name: Dylan
+Date: 10/29/2024 
+Title: Lab6 - Minix Operating System
+Description: These notes will act as a guide for setting up minix on the ECC machine. In this writeup we access the files directly on the minix machine which is not recommended but I wanted to try. It was very clunky and I will NOT be doing it like this again.
+
+
+/* Instructions that are given
+
+1. Start by launching VirtualBox, either by opening a terminal and running the command virtualbox, or by going to the Activities menu, selecting Show Applications, going to the next page, and clicking on Oracle VirtualBox.
+
+2. Before creating a virtual machine, click the three dots menu on Tools, select Networks, go to Host-only Networks, and click Create to create a network called vboxnet0
+
+3. In VirtualBox, select File > Import Appliance.
+
+4. Set Source to Local File System and File to /local/Vbox/minix3-1-7.ova, expand the Settings tab and set MAC Address Policy to Generate new MAC addresses for all network adapters, then click Finish.
+
+5. Click the settings gear for the newly created virtual machine, go to Network, ensure that Adapter 1 has Enable Network Adapter checked, Attached to is set to Host-only Adapter, and Name is set to vboxnet0
+
+6. Start the VM. To attach your keyboard to the VM, click on the region where text from MINIX appears (this may happen automatically the first time). To detach from the VM and get your cursor back, press Right Ctrl.
+
+7. Note that it will immediately prompt you to launch default or custom MINIX, selecting default automatically after a short delay. You may have to select otherwise for certain kernel changes to take effect (the kernel is self-healing)
+ 
+8. The username for MINIX is root, initially with no password. Inside of the VM, type passwd to give the system a password.
+
+9. Find the IP address for the VM by typing ifconfig at the MINIX command line.
+
+End given instructions */
+
+10. Navigate to /usr/src/kernel by typing: cd /usr/src/kernel
+
+11. Open main.c using the vi command
+
+12. Modify the code in the Private Void Announce function to include your print statement
+
+13. When done, click escape, then type: :wq
+
+14. Back out to /usr/src by typing: cd ..
+
+15. type: make world
+
+16. now type: reboot
+
+17. All done. You should see your changed code during the startup process.

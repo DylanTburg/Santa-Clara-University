@@ -1,0 +1,10 @@
+Step 1:
+
+Explain what happens when you run the threadHello.c program? Do you get the same result if you run it multiple times? What if you are also running some other demanding processes (e.g., compiling a big program, playing a Flash game on a website, or watching streaming video) when you run this program? The function go() has the parameter arg passed a local variable. Are these variables per-thread or shared state? Where does the compiler store these variables’ states? The main() has local variable i. Is this variable per-thread or shared state? Where does the compiler store this variable? 
+
+The first threadHello.c program prints the thread number and its ID. We do not get the same result every time because the order in which the threads run is undefined. The variable parameter arg is per thread but the variable passsed in for arg (i) is not. This is why we have our issues described above.
+
+Step 2:
+Delete the second for loop in threadHello.c program so that the main routine simply creates NTHREADS threads and then prints “Main thread done.” What are the possible outputs of the program now. Explain.
+
+The possible outputs still include "hello I'm thread i and my Id is pthread_self" with main thread done printing towards the end or at the end. We did not solve our issue of repeat thread numbers.

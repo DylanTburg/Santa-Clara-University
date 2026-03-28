@@ -1,0 +1,1 @@
+Lab 3 step6 notes: The threads printed out the same number a couple of times. This is because the threads share the same variable i and that leads to a race condition. One solution is to make a copy of i for each thread.

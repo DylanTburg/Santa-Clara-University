@@ -1,0 +1,73 @@
+//Name: Dylan Thornburg
+//Date: 11/5/2024
+//Title: Lab7 - Minix Scheduling
+//Description: This document includes the steps I took to modify the Minix scheduler as well as my observations on the modified scheduler.
+
+1. After you establish whatever remote connection you decide to use, open proc.c (located in the /usr/src/kernel directory on the Minix machine).
+
+2. Once you're in proc.c, navigate to the pick_proc function and make the changes necessary to alter scheduling in whatever way you want.My modified pick_proc code executes the second highest priority approx process 20% of the time.
+
+in pick_proc:
+int randInt = rand() % 10;
+if(rand()&5==0 && q < NR_SCHED_QUEUES - 1)
+{
+	q++; /*when rand()%5==0 (~20% of the time), 
+	the process with the priority just below the 
+	current will be executed. The higher priority process 
+	still stays in the queue though. It will just be 
+	done later. Scheduling has changed. */
+}
+
+
+		
+WHOLE FUNCTION:
+PRIVATE struct proc * pick_proc(void)
+{
+/* Decide who to run now.  A new process is selected an returned.
+ * When a billable process is selected, record it in 'bill_ptr', so that the 
+ * clock task can tell who to bill for system time.
+ */
+  register struct proc *rp;			/* process to run */
+  int q;				/* iterate over queues */
+
+  /* Check each of the scheduling queues for ready processes. The number of
+   * queues is defined in proc.h, and priorities are set in the task table.
+   * The lowest queue contains IDLE, which is always ready.
+   */
+  for (q=0; q < NR_SCHED_QUEUES; q++) {
+	if(!(rp = rdy_head[q])) {
+	
+		/* Dylan modified code */
+  		int randInt = rand() % 10;
+		if(rand()&5==0 && q < NR_SCHED_QUEUES - 1)
+		{
+			q++; /*when rand()%5==0 (~20% of the time), 
+			the process with the priority just below the 
+			current will be executed. The higher priority process 
+			still stays in the queue though. It will just be 
+			done later. Scheduling has changed. */
+		}
+		/* end modified code */	
+		
+		TRACE(VF_PICKPROC, printf("queue %d empty\n", q););
+		continue;
+	}
+
+#if DEBUG_RACE
+	rp = random_process(rdy_head[q]);
+#endif
+
+	TRACE(VF_PICKPROC, printf("found %s / %d on queue %d\n", 
+		rp->p_name, rp->p_endpoint, q););
+	assert(proc_is_runnable(rp));
+	if (priv(rp)->s_flags & BILLABLE)	 	
+		bill_ptr = rp;		/* bill for system time */
+	return rp;
+  }
+  return NULL;
+}
+
+
+3. After your changes are made, save the file, then use the make world command in the /usr/src directory in minix.
+
+4. Reboot and you should see the effects of your change. My changes made the boot up and execution of commands much slower, but the OS was still usable. It felt like I was on a really crappy laptop from the early 2010s; the ones that had hard drives.

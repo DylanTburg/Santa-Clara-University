@@ -1,0 +1,11 @@
+part1 (steps 1-4): 
+Upon execution of ./part1Executable, there was a seg fault (core dumped). I added in code to prevent this seg fault. When you give it a parameter such as 500 or 5000 then it works. The larger the number, the greater the delay in the loop. The larger number (5000 vs 500) also had more instances where the child and parent processes repeated instead of one after another.
+
+part2 (step5):
+I don't much to note down. The code works by creating processes only when in the correct parent process. Process 2 houses process 4 and 5, and process 3 houses 6 and 7. The parent process houses 2 and 3.
+
+part3 (step6):
+Do not dereference void *. That's all I got.
+
+part4 (step7):
+All I had to do was copy the code snippet given, put it in main, then add a "pid_t pid; pid=fork();" before it and return 0. Very simple.

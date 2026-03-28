@@ -1,0 +1,11 @@
+Name: Dylan Thornburg
+Date: 11/12/2024
+Title: Lab8 - Memory Management Notes
+
+1. For step one I just took the example code snippet and defined values for numRequests and possiblePages.
+
+2. For steps 2-3, I just made code that read from testInput and printed the cache misses. Because the instructions 
+   directed me to treat all values as cache misses, all numbers in testInput were printed regardless of cache size 
+   (we don't have cache yet)
+   
+3. Everything else in writeup

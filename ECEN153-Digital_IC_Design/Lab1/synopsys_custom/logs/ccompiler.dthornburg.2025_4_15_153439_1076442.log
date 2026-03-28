@@ -1,0 +1,92 @@
+[15:34:42.25] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c                 Version V-2023.12-6 for linux64 - Apr 18, 2024 
+              /c 
+              /c                     Copyright (c) 2004 - 2024 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 10100519 compiled on Thu Apr 18 11:33:50 2024 for CentOS64 7.3
+              /c Invocation: /usr/synopsys/customcompiler/V-2023.12-6/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr 15 15:34:39 2025
+              /c Host: linux402602
+              /c Working directory: /DCNFS/users/student/dthornburg/ELEN153L/Lab1
+              /c 
+[15:34:44.31] /m Information: Registering ICV PERC package...
+[15:34:44.78] /r giShowFrameTabs true
+[15:34:44.79] /r giWindowId 1
+[15:34:44.79] /r giWindowGeometry 1040x800
+[15:34:52.11] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[15:34:52.42] /r giWindowId 2
+[15:34:52.42] /r giWindowGeometry 660x600+50+77
+[15:34:53.56] /i gi::setCurrentIndex {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:34:53.58] /i gi::setItemSelection {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:34:55.16] /i gi::setCurrentIndex {libs} -index {analogLib} -in [gi::getWindows 2]
+[15:34:55.19] /i gi::setItemSelection {libs} -index {analogLib} -in [gi::getWindows 2]
+[15:34:56.69] /i gi::expand {cellCategories} -index {Sources} -in [gi::getWindows 2]
+[15:34:57.40] /i gi::collapse {cellCategories} -index {Sources} -in [gi::getWindows 2]
+[15:35:03.11] /# gi::executeAction {lxExpandSchematic} -in [gi::getWindows 2]
+[15:35:03.11] /i lx::showExpandSchematic -parent 2
+[15:35:03.12] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[15:35:03.12] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[15:35:03.13] /m Information: Feature 'SynopsysCustomLayoutAdvanced' checked out. (LICENSE-003)
+[15:35:03.21] /i gi::setActiveDialog [gi::getDialogs {lxExpandSchematic} -parent [gi::getWindows 2]]
+[15:35:03.47] /i db::setAttr geometry -of [gi::getDialogs {lxExpandSchematic} -parent [gi::getWindows 2]] -value 616x577+641+165
+[15:35:05.44] /i gi::pressButton {cancel} -in [gi::getDialogs {lxExpandSchematic} -parent [gi::getWindows 2]]
+[15:35:08.89] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[15:35:09.77] /i gi::setCurrentIndex {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:35:09.78] /i gi::setItemSelection {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:35:11.93] /i gi::setCurrentIndex {cellCategories} -index {All} -in [gi::getWindows 2]
+[15:35:22.61] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[15:35:28.96] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[15:35:29.26] /r giWindowId 3
+[15:35:29.26] /r giWindowGeometry 1040x800+439+117
+[15:35:36.00] /i gi::setCurrentIndex {libs} -index {SAED_PDK_90} -in [gi::getWindows 3]
+[15:35:36.01] /i gi::setItemSelection {libs} -index {SAED_PDK_90} -in [gi::getWindows 3]
+[15:36:40.10] /i gi::setCurrentIndex {libs} -index {analogLib} -in [gi::getWindows 3]
+[15:36:40.11] /i gi::setItemSelection {libs} -index {analogLib} -in [gi::getWindows 3]
+[15:36:42.09] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 3]
+[15:36:42.10] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 3]
+[15:36:43.44] /i gi::setCurrentIndex {libs} -index {parasitics} -in [gi::getWindows 3]
+[15:36:43.44] /i gi::setItemSelection {libs} -index {parasitics} -in [gi::getWindows 3]
+[15:36:44.37] /i gi::setCurrentIndex {libs} -index {reference} -in [gi::getWindows 3]
+[15:36:44.37] /i gi::setItemSelection {libs} -index {reference} -in [gi::getWindows 3]
+[15:36:45.25] /i gi::setCurrentIndex {libs} -index {sample} -in [gi::getWindows 3]
+[15:36:45.26] /i gi::setItemSelection {libs} -index {sample} -in [gi::getWindows 3]
+[15:36:45.97] /i gi::setCurrentIndex {libs} -index {sheets} -in [gi::getWindows 3]
+[15:36:45.98] /i gi::setItemSelection {libs} -index {sheets} -in [gi::getWindows 3]
+[15:36:46.46] /i gi::setCurrentIndex {libs} -index {verilogaLib} -in [gi::getWindows 3]
+[15:36:46.46] /i gi::setItemSelection {libs} -index {verilogaLib} -in [gi::getWindows 3]
+[15:36:46.96] /i gi::setCurrentIndex {libs} -index {snpsDefTechLib} -in [gi::getWindows 3]
+[15:36:46.97] /i gi::setItemSelection {libs} -index {snpsDefTechLib} -in [gi::getWindows 3]
+[15:36:47.63] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 3]
+[15:36:50.05] /i gi::executeAction {menuPreShow} -in [gi::getWindows 3]
+[15:36:50.05] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 3]]
+[15:36:58.20] /# gi::executeAction {dbShowGenerateSchematicFromText} -in [gi::getWindows 3]
+[15:36:58.20] /i db::showGenerateSchematicsFromText
+[15:36:58.57] /i db::setAttr geometry -of [gi::getDialogs {dbGenerateSchematicsFromText}] -value 515x589+855+335
+[15:37:00.64] /i gi::pressButton {/tabGroup/mainTab/inputGroup/inputFiles/browseButton} -in [gi::getDialogs {dbGenerateSchematicsFromText}]
+[15:37:19.11] /r giFileDialog reject Voltage_Divider/schematic
+[15:37:22.57] /i gi::setField {/tabGroup/mainTab/inputGroup/language} -value {SPICE} -in [gi::getDialogs {dbGenerateSchematicsFromText}]
+[15:37:24.83] /i gi::closeWindows [gi::getDialogs {dbGenerateSchematicsFromText}]
+[15:46:50.11] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[15:46:51.80] /i exit
+[15:46:51.83] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[15:46:52.14] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 419x212+750+406
+[15:46:53.04] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[15:46:54.65] /o Shutdown time: Tue Apr 15 15:46:54 2025
+[15:46:54.65] /o Elapsed session real time: 12.2 minutes
+[15:46:54.65] /o Session terminated. Log is at /DCNFS/users/student/dthornburg/ELEN153L/Lab1/synopsys_custom/logs/ccompiler.dthornburg.2025_4_15_153439_1076442.log

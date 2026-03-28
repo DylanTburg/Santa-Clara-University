@@ -1,0 +1,82 @@
+[15:50:59.44] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c                 Version V-2023.12-6 for linux64 - Apr 18, 2024 
+              /c 
+              /c                     Copyright (c) 2004 - 2024 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 10100519 compiled on Thu Apr 18 11:33:50 2024 for CentOS64 7.3
+              /c Invocation: /usr/synopsys/customcompiler/V-2023.12-6/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr 15 15:50:56 2025
+              /c Host: linux402602
+              /c Working directory: /DCNFS/users/student/dthornburg/ELEN153L/Lab1
+              /c 
+[15:51:01.55] /m Information: Registering ICV PERC package...
+[15:51:02.28] /r giShowFrameTabs true
+[15:51:02.29] /r giWindowId 1
+[15:51:02.29] /r giWindowGeometry 1040x800
+[15:51:03.39] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[15:51:03.70] /r giWindowId 2
+[15:51:03.70] /r giWindowGeometry 660x600+50+77
+[15:51:06.00] /i gi::setCurrentIndex {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:51:06.02] /i gi::setItemSelection {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:51:06.99] /i gi::setCurrentIndex {libs} -index {verilogaLib} -in [gi::getWindows 2]
+[15:51:07.00] /i gi::setItemSelection {libs} -index {verilogaLib} -in [gi::getWindows 2]
+[15:51:07.65] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 2]
+[15:51:07.66] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 2]
+[15:51:08.01] /i gi::setCurrentIndex {libs} -index {analogLib} -in [gi::getWindows 2]
+[15:51:08.03] /i gi::setItemSelection {libs} -index {analogLib} -in [gi::getWindows 2]
+[15:51:08.44] /i gi::setCurrentIndex {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:51:08.44] /i gi::setItemSelection {libs} -index {SAED_PDK_90} -in [gi::getWindows 2]
+[15:51:09.61] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[15:51:11.69] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:51:11.69] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[15:51:14.86] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:51:14.86] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[15:51:15.86] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:51:15.86] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[15:51:16.36] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[15:51:16.36] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[15:51:17.28] /# gi::executeAction {deOpenDesign} -in [gi::getWindows 2]
+[15:51:17.28] /i de::showOpenDesign
+[15:51:17.31] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[15:51:17.58] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+628+233
+[15:51:20.59] /i gi::setCurrentIndex {designLibs} -index {rfLib} -in [gi::getDialogs {deOpenDesign}]
+[15:51:20.60] /i gi::setItemSelection {designLibs} -index {rfLib} -in [gi::getDialogs {deOpenDesign}]
+[15:51:21.07] /i gi::setCurrentIndex {designLibs} -index {analogLib} -in [gi::getDialogs {deOpenDesign}]
+[15:51:21.07] /i gi::setItemSelection {designLibs} -index {analogLib} -in [gi::getDialogs {deOpenDesign}]
+[15:51:22.17] /i gi::setCurrentIndex {designLibs} -index {SAED_PDK_90} -in [gi::getDialogs {deOpenDesign}]
+[15:51:22.17] /i gi::setItemSelection {designLibs} -index {SAED_PDK_90} -in [gi::getDialogs {deOpenDesign}]
+[15:51:23.18] /i gi::setCurrentIndex {designLibs} -index {basic} -in [gi::getDialogs {deOpenDesign}]
+[15:51:23.18] /i gi::setItemSelection {designLibs} -index {basic} -in [gi::getDialogs {deOpenDesign}]
+[15:51:23.74] /i gi::setCurrentIndex {designLibs} -index {reference} -in [gi::getDialogs {deOpenDesign}]
+[15:51:23.74] /i gi::setItemSelection {designLibs} -index {reference} -in [gi::getDialogs {deOpenDesign}]
+[15:51:24.52] /i gi::setCurrentIndex {designLibs} -index {sheets} -in [gi::getDialogs {deOpenDesign}]
+[15:51:24.53] /i gi::setItemSelection {designLibs} -index {sheets} -in [gi::getDialogs {deOpenDesign}]
+[15:51:25.13] /i gi::setCurrentIndex {designLibs} -index {verilogaLib} -in [gi::getDialogs {deOpenDesign}]
+[15:51:25.13] /i gi::setItemSelection {designLibs} -index {verilogaLib} -in [gi::getDialogs {deOpenDesign}]
+[15:51:26.38] /i gi::pressButton {cancel} -in [gi::getDialogs {deOpenDesign}]
+[15:51:27.46] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[15:51:28.31] /i exit
+[15:51:28.34] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[15:51:28.66] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 419x185+750+419
+[15:51:30.11] /r giDialog gi::setField {SaveRecentClips} -value {false} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[15:51:30.72] /r giDialog gi::setField {SaveRecentClips} -value {true} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[15:51:32.42] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[15:51:34.00] /o Shutdown time: Tue Apr 15 15:51:34 2025
+[15:51:34.00] /o Elapsed session real time: 0.58 minutes
+[15:51:34.00] /o Session terminated. Log is at /DCNFS/users/student/dthornburg/ELEN153L/Lab1/synopsys_custom/logs/ccompiler.dthornburg.2025_4_15_155056_1077981.log

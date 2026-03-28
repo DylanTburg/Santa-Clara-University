@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Wed Apr 16 16:02:29 2025-->
+<file-format version="1.0" name="stateCategory">
+ <collection name="sweeps">
+  <object type="saSweep" version="1" name="sweeps">
+   <collection name="dataRows"/>
+   <attribute type="giBoolean" value="1" name="enabled"/>
+   <attribute type="giBoolean" value="0" name="isOptimization"/>
+   <attribute type="giString" value="sweep_1" name="name"/>
+   <object type="saSweepRange" version="1" name="sweepRange">
+    <attribute type="giString" value="" name="additionalPoints"/>
+    <attribute type="giString" value="" name="center"/>
+    <attribute type="giString" value="" name="linearPoints"/>
+    <attribute type="enLinearSweepType" value="Points" name="linearType"/>
+    <attribute type="giString" value="" name="logPoints"/>
+    <attribute type="enLogSweepType" value="Decade" name="logType"/>
+    <attribute type="giString" value="range_1" name="name"/>
+    <attribute type="giString" value="0.0 0.25 0.5 0.75 1.0 1.2" name="poi"/>
+    <attribute type="enSweepRangeType" value="POI" name="rangeType"/>
+    <attribute type="giString" value="" name="span"/>
+    <attribute type="giString" value="" name="start"/>
+    <attribute type="giString" value="" name="stepSize"/>
+    <attribute type="enSweepRangeStepType" value="Linear" name="stepType"/>
+    <attribute type="giString" value="" name="stop"/>
+   </object>
+   <attribute type="enSweepType" value="singleVariable" name="sweepType"/>
+   <attribute type="giBoolean" value="0" name="useSimulatorSweep"/>
+   <attribute type="giString" value="vgs" name="variable"/>
+  </object>
+ </collection>
+</file-format>

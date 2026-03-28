@@ -1,0 +1,8 @@
+replace lt spice shcmeatic with book one, 
+Show currents in L1 and L2,
+Find out why big steps dont cause problems
+Run stop start until outputs get to 12V
+put non-inverting buck boost eq
+Resim some things without any pulsing at input (strictly DC)
+
+

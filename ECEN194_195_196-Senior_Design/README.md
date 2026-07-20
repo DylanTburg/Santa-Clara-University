@@ -1,5 +1,7 @@
 # Open-Source ARM Cortex-M0 (ARMv6-M) in Verilog
 
+Main Repo can be found here: https://github.com/brkelly6585/Open-Source-ARM-Cortex-M0/tree/main
+
 A from-scratch, open-source implementation of an ARMv6-M processor that is
 cycle-accurate against real Cortex-M0 silicon. The RTL is plain Verilog-2005
 with no vendor primitives in the core itself, so it simulates in any standard
